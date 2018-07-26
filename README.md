@@ -1,2 +1,2 @@
 # REDSTOP
-REDSTOP, Software Maestro Repository
+REDSTOP, Software Maestro
