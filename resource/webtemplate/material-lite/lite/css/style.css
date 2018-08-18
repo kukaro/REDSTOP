@@ -1943,6 +1943,7 @@ File: scss
       display: none; }
     .topbar .top-navbar .navbar-header {
       line-height: 65px;
+      background: #425378;
       text-align: center; }
       .topbar .top-navbar .navbar-header .navbar-brand {
         margin-right: 0px;
