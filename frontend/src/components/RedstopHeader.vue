@@ -2,7 +2,7 @@
   <div id="redstopHeader">
     <header>
       <div class="logoDiv">
-        <img src="../assets/img/redstop-logo.png" alt="logo">
+        <img src="../assets/img/redstop-logo.png"alt="logo">
       </div>
 
       <div class="menuDiv">
