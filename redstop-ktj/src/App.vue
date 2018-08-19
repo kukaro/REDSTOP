@@ -1,19 +1,21 @@
 <template>
   <div id="app">
-    <div id="redstop-header"></div>
-    <div id="app2"></div>
+    <RedstopHeader></RedstopHeader>
+    <App2></App2>
     <img src="./assets/logo.png">
     <router-view/>
   </div>
 </template>
 
 <script>
+import RedstopHeader from './RedstopHeader'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {RedstopHeader}
 }
 </script>
 
-<style>
+<style lang="css">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

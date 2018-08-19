@@ -5,6 +5,7 @@ import App from './App'
 import App2 from './App2'
 import RedstopHeader from './RedstopHeader'
 import router from './router'
+import './assets/css/style.css'
 
 Vue.config.productionTip = false
 

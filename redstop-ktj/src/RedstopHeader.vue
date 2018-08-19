@@ -61,9 +61,9 @@
 </template>
 
 <script>
-  export default {
-    name: 'RedstopHeader'
-  }
+export default {
+  name: 'RedstopHeader'
+}
 </script>
 
 <style>
