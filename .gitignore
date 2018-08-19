@@ -1,0 +1,5 @@
+#jetbrains editor setting file
+.idea
+
+#nodejs
+node_modules
