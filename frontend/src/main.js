@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import RedstopHeader from './components/RedstopHeader'
+import TreeView from './components/TreeView'
 import axios from 'axios'
 
 Vue.prototype.$http = axios
@@ -22,4 +23,11 @@ new Vue({
   router,
   components: { RedstopHeader },
   template: '<RedstopHeader/>'
+})
+
+new Vue({
+  el: '#treeview',
+  router,
+  components: { TreeView },
+  template: '<TreeView/>'
 })
