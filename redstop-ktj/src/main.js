@@ -6,7 +6,9 @@ import App2 from './App2'
 import RedstopHeader from './RedstopHeader'
 import router from './router'
 import './assets/css/style.css'
+import axios from 'axios'
 
+Vue.prototype.$http = axios
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

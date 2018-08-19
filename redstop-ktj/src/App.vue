@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    {{hi}}
     <RedstopHeader></RedstopHeader>
     <App2></App2>
     <img src="./assets/logo.png">
@@ -9,9 +10,16 @@
 
 <script>
 import RedstopHeader from './RedstopHeader'
+import App2 from './App2'
+
 export default {
   name: 'App',
-  components: {RedstopHeader}
+  data: () => {
+    return {
+      hi: 'melong'
+    }
+  },
+  components: {App2, RedstopHeader}
 }
 </script>
 
