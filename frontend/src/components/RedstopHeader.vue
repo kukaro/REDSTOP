@@ -1,10 +1,23 @@
 <template>
   <div id="redstopHeader">
-    <ul>
-      <li v-for="item in headerList" :key="item">
-        {{item}}
-      </li>
-    </ul>
+    <header>
+      <div class="logoDiv">
+        <img src="../assets/img/redstop-logo.png" alt="logo">
+      </div>
+
+      <div class="menuDiv">
+        <ul class="menu">
+          <li v-for="item in headerList" :key="item">
+            {{item}}
+          </li>
+        </ul>
+      </div>
+
+      <div class="userInfoDiv">
+
+      </div>
+    </header>
+
   </div>
 </template>
 
@@ -25,12 +38,5 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import "../assets/css/redstop-header.css";
 </style>
