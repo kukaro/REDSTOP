@@ -1,6 +1,6 @@
 <template>
   <li class="rs-header-body-item">
-    <a :href="'#/'+itemName">{{itemName}}</a>
+    <a :href="'#/'+itemKebabName">{{itemName}}</a>
   </li>
 </template>
 
@@ -11,11 +11,12 @@ export default {
   props: ['initItemName'],
   name: 'rs-header-body-item',
   created: function () {
-    this.itemName = casing.getConverter('kebab-case')(this.itemName)
+    this.itemKebabName = casing.getConverter('kebab-case')(this.itemKebabName)
   },
   data: function () {
     return {
-      itemName: this.initItemName
+      itemName: this.initItemName,
+      itemKebabName: this.initItemName
     }
   }
 }
