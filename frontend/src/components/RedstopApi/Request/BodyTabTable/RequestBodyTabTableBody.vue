@@ -10,9 +10,6 @@ export default {
   components: {RequestBodyTabTableRow},
   props: ['initTableValue'],
   name: 'RequestBodyTabTableBody',
-  created: function () {
-
-  },
   data: function () {
     return {
       tableValue: this.initTableValue

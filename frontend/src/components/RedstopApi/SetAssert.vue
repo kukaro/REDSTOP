@@ -2,6 +2,7 @@
     <div id="set-assert">
       <AssertTitle></AssertTitle>
       <AssertAdd></AssertAdd>
+      <br>
     </div>
 </template>
 

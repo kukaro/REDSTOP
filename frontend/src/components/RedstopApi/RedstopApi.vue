@@ -1,8 +1,8 @@
 <template>
   <div id="redstop-api">
-    <ApiTitle></ApiTitle><br>
+    <ApiTitle></ApiTitle>
     <SetApi></SetApi>
-    <SetAssert></SetAssert><br>
+    <SetAssert></SetAssert>
     <SetRequest></SetRequest>
   </div>
 </template>

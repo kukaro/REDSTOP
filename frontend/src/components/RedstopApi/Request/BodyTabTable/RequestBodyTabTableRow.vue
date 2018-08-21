@@ -18,9 +18,6 @@ export default {
   data: function () {
     return {
       tableRowData: this.initTableRowData
-      // styleObject: {
-      //   backgroundColor: '#8B95AC'
-      // }
     }
   }
 }

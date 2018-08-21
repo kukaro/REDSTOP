@@ -1,14 +1,32 @@
 <template>
-  <div id="request-tab-item"><b><a href="#">{{headerName}}</a></b>&nbsp;&nbsp;&nbsp;</div>
+  <div id="request-tab-item"><b><a href="#/test-block/redstop-api" :class="{'active':isOver | isClick}" @mouseover="mouseOver" @mouseleave="mouseLeave">{{headerName}}</a></b>&nbsp;&nbsp;&nbsp;</div>
 </template>
 
 <script>
 export default {
-  props: ['name'],
+  props: ['name', 'initIsClick'],
   name: 'RequestTabItem',
+  created: function () {
+
+  },
+  watch: {
+    initIsClick: function () {
+      this.isClick = this.initIsClick
+    }
+  },
   data: function () {
     return {
-      headerName: this.name
+      headerName: this.name,
+      isOver: false,
+      isClick: this.initIsClick
+    }
+  },
+  methods: {
+    mouseOver: function (e) {
+      this.isOver = true
+    },
+    mouseLeave: function (e) {
+      this.isOver = false
     }
   }
 }
