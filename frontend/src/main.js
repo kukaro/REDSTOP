@@ -3,7 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import RedstopHeader from './components/RedstopHeader'
+import RedstopHeader from './components/RsHeader'
 import TreeView from './components/TreeView'
 import axios from 'axios'
 

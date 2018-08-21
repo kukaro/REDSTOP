@@ -1,18 +1,18 @@
 <template>
   <div id="app">
-    <RedstopHeader></RedstopHeader>
+    <rs-header></rs-header>
     <TreeView></TreeView>
     <router-view/>
   </div>
 </template>
 
 <script>
-import RedstopHeader from './components/RedstopHeader'
+import RsHeader from './components/RsHeader'
 import TreeView from './components/TreeView'
 
 export default {
   name: 'App',
-  components: {RedstopHeader, TreeView}
+  components: {RsHeader, TreeView}
 }
 </script>
 

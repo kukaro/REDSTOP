@@ -13,7 +13,7 @@ export default new Router({
       component: Root
     },
     {
-      path: '/test-block/redstop-api',
+      path: '/test-block',
       name: 'RedstopAPi',
       component: RedstopApi
     }
