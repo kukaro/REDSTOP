@@ -1,5 +1,5 @@
 <template>
-    <div id="request-tab-item">{{headerName}}</div>
+    <div id="request-tab-item">{{headerName}}&nbsp;&nbsp;&nbsp;</div>
 </template>
 
 <script>
@@ -15,7 +15,5 @@ export default {
 </script>
 
 <style scoped>
-#request-icon{
-  padding-right: 10px;
-}
+@import '../../../assets/css/request/request-tab-item.css'
 </style>

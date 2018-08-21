@@ -38,5 +38,5 @@ export default {
 </script>
 
 <style>
-@import "../assets/css/redstop-header.css";
+@import '../assets/css/redstop-header.css';
 </style>

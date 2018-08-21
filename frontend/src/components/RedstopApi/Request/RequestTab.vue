@@ -1,7 +1,7 @@
 <template>
     <div id="request-tab">
       <ul>
-        <li v-for="item in 4" :key="item">
+        <li v-for="item in 3" :key="item">
           <RequestTabItem :name="headerNames[item-1]"/>
         </li>
       </ul>
@@ -22,7 +22,5 @@ export default {
 </script>
 
 <style scoped>
-#request-icon{
-  padding-right: 10px;
-}
+@import '../../../assets/css/request/request-tab.css'
 </style>
