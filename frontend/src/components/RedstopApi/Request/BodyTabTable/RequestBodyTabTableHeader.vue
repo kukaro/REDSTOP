@@ -2,7 +2,7 @@
     <thead id="request-body-tab-table-header">
       <tr>
         <td v-for="item in tableHeaderList" :key="item.id">
-          {{item}}
+          <b>{{item}}</b>
         </td>
       </tr>
     </thead>
@@ -24,6 +24,6 @@ export default {
   td{
     border-bottom: 2px solid #8B95AC;
     text-align: center;
-    width: 33.33333333334%;
+    width: 33%;
   }
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <div id="request-tab-item">{{headerName}}&nbsp;&nbsp;&nbsp;</div>
+  <div id="request-tab-item"><b><a href="#">{{headerName}}</a></b>&nbsp;&nbsp;&nbsp;</div>
 </template>
 
 <script>
