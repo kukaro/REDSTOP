@@ -3,15 +3,15 @@
     <rs-tb-aside-title :initTitleName="url"></rs-tb-aside-title>
     <rs-tb-aside-ablock-api></rs-tb-aside-ablock-api>
     <rs-tb-aside-ablock-assertion></rs-tb-aside-ablock-assertion>
-    <SetRequest></SetRequest>
+    <rs-tb-aside-ablock-request></rs-tb-aside-ablock-request>
   </div>
 </template>
 
 <script>
-import SetRequest from './RedstopApi/SetRequest'
 import RsTbAsideTitle from './RsTbAside/RsTbAsideTitle'
 import RsTbAsideAblockApi from './RsTbAside/RsTbAsideAblockApi'
 import RsTbAsideAblockAssertion from './RsTbAside/RsTbAsideAblockAssertion'
+import RsTbAsideAblockRequest from './RsTbAside/RsTbAsideAblockRequest'
 
 export default {
   props: ['url'],
@@ -19,7 +19,7 @@ export default {
   created: function () {
   },
   components: {
-    RsTbAsideAblockAssertion, RsTbAsideAblockApi, RsTbAsideTitle, SetRequest}
+    RsTbAsideAblockRequest, RsTbAsideAblockAssertion, RsTbAsideAblockApi, RsTbAsideTitle}
 }
 </script>
 

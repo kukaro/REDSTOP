@@ -1,11 +1,13 @@
 <template>
-  <div id="request-tab-item"><b><a href="#/test-block/redstop-api" :class="{'active':isOver | isClick}" @mouseover="mouseOver" @mouseleave="mouseLeave">{{headerName}}</a></b>&nbsp;&nbsp;&nbsp;</div>
+  <div class="rs-tb-aside-ablock-request-tab-item">
+    <b><a href="#/test-block/redstop-api" :class="{'active':isOver | isClick}" @mouseover="mouseOver" @mouseleave="mouseLeave">{{headerName}}</a></b>&nbsp;&nbsp;&nbsp;
+  </div>
 </template>
 
 <script>
 export default {
   props: ['name', 'initIsClick'],
-  name: 'RequestTabItem',
+  name: 'rs-tb-aside-ablock-request-tab-item',
   created: function () {
 
   },
@@ -33,5 +35,5 @@ export default {
 </script>
 
 <style scoped>
-@import '../../../assets/css/request/request-tab-item.css'
+  @import '../../../assets/css/RsTbAside/RsTbAsideAblockRequest/RsTbAsideAblockRequestTabItem.css'
 </style>

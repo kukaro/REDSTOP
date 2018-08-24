@@ -1,5 +1,5 @@
 <template>
-    <thead id="request-body-tab-table-header">
+    <thead class="rs-tb-aside-ablock-request-body-tab-table-header">
       <tr>
         <td v-for="item in tableHeaderList" :key="item.id">
           <b>{{item}}</b>
@@ -11,7 +11,7 @@
 <script>
 export default {
   props: ['initTableHeaderList'],
-  name: 'RequestBodyTabTableHeader',
+  name: 'rs-tb-aside-ablock-request-body-tab-table-header',
   data: function () {
     return {
       tableHeaderList: this.initTableHeaderList

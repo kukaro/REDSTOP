@@ -1,5 +1,5 @@
 <template>
-    <tr id="request-body-tab-table-row">
+    <tr class="rs-tb-aside-ablock-request-body-tab-table-row">
       <td v-for="(value,key) in tableRowData" :key="key" :class="{'color-row':key%2==0}">
         <span v-if="value!=null">{{value}}</span>
         <span v-else>-</span>
@@ -10,7 +10,7 @@
 <script>
 export default {
   props: ['initTableRowData'],
-  name: 'RequestBodyTabTableRow',
+  name: 'rs-tb-aside-ablock-request-body-tab-table-row',
   created: function () {
     var values = Object.keys(this.tableRowData).map(key => this.tableRowData[key])
     this.tableRowData = values

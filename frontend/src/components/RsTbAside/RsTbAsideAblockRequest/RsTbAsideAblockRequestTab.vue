@@ -1,18 +1,18 @@
 <template>
-    <div id="request-tab">
+    <div class="rs-tb-aside-ablock-request-tab">
       <ul>
         <li v-for="(value, key) in headerNames" :key="key" @click="mouseClick(key)">
-          <RequestTabItem :name="value" :initIsClick="clickNumber==key"/>
+          <rs-tb-aside-ablock-request-tab-item :name="value" :initIsClick="clickNumber==key"/>
         </li>
       </ul>
     </div>
 </template>
 
 <script>
-import RequestTabItem from './RequestTabItem'
+import RsTbAsideAblockRequestTabItem from './RsTbAsideAblockRequestTabItem'
 export default {
-  name: 'RequestTab',
-  components: {RequestTabItem},
+  name: 'rs-tb-aside-ablock-request-tab',
+  components: {RsTbAsideAblockRequestTabItem},
   created: function () {
 
   },
@@ -31,5 +31,5 @@ export default {
 </script>
 
 <style scoped>
-@import '../../../assets/css/request/request-tab.css'
+@import '../../../assets/css/RsTbAside/RsTbAsideAblockRequest/RsTbAsideAblockRequestTab.css'
 </style>
