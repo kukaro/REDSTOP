@@ -1,18 +1,16 @@
 <template>
   <div id="app">
     <rs-header></rs-header>
-    <TreeView></TreeView>
     <router-view/>
   </div>
 </template>
 
 <script>
 import RsHeader from './components/RsHeader'
-import TreeView from './components/TreeView'
 
 export default {
   name: 'App',
-  components: {RsHeader, TreeView}
+  components: {RsHeader}
 }
 </script>
 

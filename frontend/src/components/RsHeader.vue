@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import RsHeadrerBody from './rs-header/RsHeaderBody'
+import RsHeadrerBody from './RsHeader/RsHeaderBody'
 export default {
   name: 'rs-header',
   components: {RsHeadrerBody}

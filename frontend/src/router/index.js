@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Root from '@/components/Root'
-import RedstopApi from '@/components/RedstopApi/RedstopApi'
+import RsTbAside from '@/components/RsTbAside'
 
 Vue.use(Router)
 
@@ -13,9 +13,16 @@ export default new Router({
       component: Root
     },
     {
-      path: '/test-block',
-      name: 'RedstopAPi',
-      component: RedstopApi
+      path: '/test-block/*/:url',
+      name: 'rs-tb-aside',
+      component: RsTbAside,
+      props: true
+    },
+    {
+      path: '/test-block/:url',
+      name: 'rs-tb-aside',
+      component: RsTbAside,
+      props: true
     }
   ]
 })
