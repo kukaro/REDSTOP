@@ -1,10 +1,12 @@
 <template>
   <div class="rs-tb-aside">
-    <rs-tb-aside-title :initTitleName="url"></rs-tb-aside-title>
-    <rs-tb-aside-ablock-api></rs-tb-aside-ablock-api>
-    <rs-tb-aside-ablock-assertion></rs-tb-aside-ablock-assertion>
-    <rs-tb-aside-ablock-request></rs-tb-aside-ablock-request>
-    <rs-tb-aside-ablock-response></rs-tb-aside-ablock-response>
+    <aside>
+      <rs-tb-aside-title :initTitleName="url"></rs-tb-aside-title>
+      <rs-tb-aside-ablock-api></rs-tb-aside-ablock-api>
+      <rs-tb-aside-ablock-assertion></rs-tb-aside-ablock-assertion>
+      <rs-tb-aside-ablock-request></rs-tb-aside-ablock-request>
+      <rs-tb-aside-ablock-response></rs-tb-aside-ablock-response>
+    </aside>
   </div>
 </template>
 
@@ -19,16 +21,23 @@ export default {
   props: ['url'],
   name: 'rs-tb-aside',
   created: function () {
+
   },
   components: {
-    RsTbAsideAblockResponse, RsTbAsideAblockRequest, RsTbAsideAblockAssertion, RsTbAsideAblockApi, RsTbAsideTitle}
+    RsTbAsideAblockResponse, RsTbAsideAblockRequest, RsTbAsideAblockAssertion, RsTbAsideAblockApi, RsTbAsideTitle
+  },
+  data: function () {
+    return {
+    }
+  }
 }
 </script>
 
 <style scoped>
-  .rs-tb-aside {
+  aside {
     margin-top: 60px;
     margin-left: 60px;
     margin-right: 40px;
+    float: right;
   }
 </style>

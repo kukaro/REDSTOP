@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <rs-header></rs-header>
-    <rs-tb-nav></rs-tb-nav>
     <router-view/>
   </div>
 </template>
@@ -9,10 +8,11 @@
 <script>
 import RsHeader from './components/RsHeader'
 import RsTbNav from './components/RsTbNav'
+import RsTbAside from './components/RsTbAside'
 
 export default {
   name: 'App',
-  components: {RsTbNav, RsHeader}
+  components: {RsTbAside, RsTbNav, RsHeader}
 }
 </script>
 

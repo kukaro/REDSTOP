@@ -1,15 +1,31 @@
 <template>
   <div class="rs-tb-nav-header">
-    <ul class="treeViewMenu">
-      <li><b>Explorer</b></li>
-      <li><b>History</b></li>
+    <ul>
+      <li v-for="(value,key) in navHeaderList" :key="key" @click="mouseClick(key)">
+        <rs-tb-nav-header-item :initName="value" :initIsClick="clickNumber==key"></rs-tb-nav-header-item>
+      </li>
     </ul>
   </div>
 </template>
 
 <script>
+import RsTbNavHeaderItem from './RsTbNavHeaderItem'
 export default {
-  name: 'rs-tb-nav-header'
+  name: 'rs-tb-nav-header',
+  components: {RsTbNavHeaderItem},
+  created: function () {
+  },
+  data: function () {
+    return {
+      navHeaderList: ['Explorer', 'History'],
+      clickNumber: 0
+    }
+  },
+  methods: {
+    mouseClick: function (key) {
+      this.clickNumber = key
+    }
+  }
 }
 </script>
 

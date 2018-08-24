@@ -6,10 +6,11 @@
         <img v-else-if="treeData.type=='c'" src="../../assets/img/case.png"/>
         <img v-else-if="treeData.type=='a'" src="../../assets/img/api.png"/>
         {{treeData.name}}
-        <span v-if="isFolder">{{open ? 'v' : '>'}}</span>
+        <img v-show="isFolder && open" class="arrow" src="../../assets/img/arrow-bottom.png">
+        <img v-show="isFolder && !open" class="arrow" src="../../assets/img/arrow-right.png">
       </div>
       <ul v-show="open" v-if="isFolder">
-        <rs-tb-nav-body-tree class="item" v-for="atom in treeData.children" :initTreeData="atom" :key="atom.id">
+        <rs-tb-nav-body-tree class="item" v-for="atom in treeData.children" :initTreeData="atom" :key="atom.id" :initPath="path + '-' + atom.type + atom.name">
         </rs-tb-nav-body-tree>
         <li class="add" @click="addChild">+</li>
       </ul>
@@ -18,24 +19,28 @@
 </template>
 
 <script>
+/* eslint-disable */
 export default {
-  props: ['initTreeData'],
+  props: ['initTreeData', 'initPath'],
   name: 'rs-tb-nav-body-tree',
   created: function () {
   },
   data: function () {
     return {
       treeData: this.initTreeData,
-      open: false
+      open: false,
+      path: this.initPath
     }
   },
   computed: {
     isFolder: function () {
-      return (this.treeData.type == 'g' || this.treeData.type == 'c')
+      return (this.treeData.type === 'g' || this.treeData.type === 'c')
     }
   },
   methods: {
     toggle: function () {
+      // document.location.href = '#/test-block/' + this.path;
+      this.$router.push(this.path)
       if (this.isFolder) {
         this.open = !this.open
       }
@@ -57,16 +62,11 @@ export default {
     width: 100%;
     padding-left: 16px;
     line-height: 1.5em;
-    list-style: none;
-    list-style-image: url("../../assets/img/case.png");
   }
 
-  ul ul {
-    width: 100%;
-    padding-left: 16px;
-    line-height: 1.5em;
-    list-style: none;
-    list-style-image: url("../../assets/img/api.png");
+  .arrow {
+    width: 9px;
+    height: 9px;
   }
 
 </style>

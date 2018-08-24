@@ -2,7 +2,7 @@
   <div class="rs-tb-nav-body">
     <div>
       <ul>
-        <rs-tb-nav-body-tree :initTreeData="treeData"></rs-tb-nav-body-tree>
+        <rs-tb-nav-body-tree :initTreeData="treeData" :initPath="'/test-block/' + treeData.type + treeData.name"></rs-tb-nav-body-tree>
       </ul>
     </div>
   </div>
@@ -69,13 +69,7 @@ export default {
 </script>
 
 <style>
-
-  rs-tb-nav-body-tree {
-    width: 100%;
-    margin-top: 16px;
-    padding-left: 40px;
-    line-height: 2.5em;
-    list-style-image: url("../../assets/img/group.png");
-  }
-
+.rs-tb-nav-body{
+  padding: 20px;
+}
 </style>
