@@ -8,6 +8,11 @@
 export default {
   props: ['initKey', 'initValue'],
   name: 'rs-tb-aside-ablock-response-body-item',
+  created: function () {
+    if (typeof this.value === 'string') {
+      this.value = '"' + this.value + '"'
+    }
+  },
   components: {
 
   },
@@ -23,8 +28,5 @@ export default {
 <style scoped>
 .key-style{
   color: #4a5be2;
-}
-.value-style{
-
 }
 </style>
