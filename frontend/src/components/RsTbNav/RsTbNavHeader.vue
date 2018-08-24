@@ -5,6 +5,7 @@
         <rs-tb-nav-header-item :initName="value" :initIsClick="clickNumber==key"></rs-tb-nav-header-item>
       </li>
     </ul>
+    <br>
   </div>
 </template>
 

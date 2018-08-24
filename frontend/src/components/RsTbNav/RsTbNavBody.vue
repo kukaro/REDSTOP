@@ -70,6 +70,7 @@ export default {
 
 <style>
 .rs-tb-nav-body{
-  padding: 20px;
+  padding-left: 20px;
+  padding-top: 50px;
 }
 </style>
