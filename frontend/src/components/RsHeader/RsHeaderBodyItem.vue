@@ -23,6 +23,9 @@ export default {
 </script>
 
 <style scoped>
+li{
+}
+
 a {
   float: left;
   width: 140px;

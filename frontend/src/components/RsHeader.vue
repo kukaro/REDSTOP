@@ -1,8 +1,8 @@
 <template>
   <div class="rs-header">
     <header>
-      <div class="logoDiv">
-        <img src="../assets/img/redstop-logo.png" alt="logo">
+      <div class="logo-div">
+        <img src="../assets/img/rs-full-logo.png" alt="logo">
       </div>
 
       <rs-headrer-body></rs-headrer-body>

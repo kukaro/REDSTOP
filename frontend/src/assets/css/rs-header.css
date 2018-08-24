@@ -15,7 +15,7 @@ header {
   height: 60px;
 }
 
-.logoDiv {
+.logo-div {
   position: absolute;
   left: 0;
   width: 20%;
@@ -39,7 +39,8 @@ header {
   background-color: #536285;
 }
 
-.logoDiv > img {
+.logo-div > img {
   width: 100%;
   height: 70px;
 }
+
