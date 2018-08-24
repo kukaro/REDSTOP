@@ -2,7 +2,7 @@
     <div class="rs-tb-aside-ablock-assertion">
       <rs-tb-aside-ablock-assertion-title></rs-tb-aside-ablock-assertion-title>
       <rs-tb-aside-ablock-assertion-add></rs-tb-aside-ablock-assertion-add>
-      <br>
+      <br><br>
     </div>
 </template>
 

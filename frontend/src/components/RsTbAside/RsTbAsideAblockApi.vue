@@ -12,6 +12,7 @@
         </div>
         <input type="text" class="form-control" aria-label="Text input with dropdown button">
       </div>
+      <br>
     </div>
 </template>
 

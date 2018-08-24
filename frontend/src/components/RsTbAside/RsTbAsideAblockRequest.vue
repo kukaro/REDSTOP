@@ -3,6 +3,7 @@
       <rs-tb-aside-ablock-request-title></rs-tb-aside-ablock-request-title>
       <rs-tb-aside-ablock-request-tab></rs-tb-aside-ablock-request-tab>
       <rs-tb-aside-ablock-request-body-tab-table></rs-tb-aside-ablock-request-body-tab-table>
+      <br><br>
     </div>
 </template>
 
