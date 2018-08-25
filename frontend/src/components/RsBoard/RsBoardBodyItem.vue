@@ -5,11 +5,16 @@
     <div class="item-div-table">
       <table class="item-table">
         <tr>
-          <td class="table-top-left" align="center">1</td>
-          <td class="table-top-right" align="center">2</td>
+          <td class="table-top-left"><span class="gray-font">Success</span><br><span class="success-font">{{success}}%</span></td>
+          <td class="table-top-right"><span class="gray-font">Fail</span><br><span class="fail-font">{{fail}}%</span></td>
         </tr>
         <tr>
-          <td class="table-bottom" colspan="2" align="center">3</td>
+          <td class="table-bottom" colspan="2" align="center">
+            <img v-if="type==='baseline'" class="load-type-img" src="../../assets/img/chart-baseline.png">
+            <img v-else-if="type==='peak'" class="load-type-img" src="../../assets/img/chart-peak.png">
+            <img v-else-if="type==='stress'" class="load-type-img" src="../../assets/img/chart-stress.png">
+            <img v-else-if="type==='spike'" class="load-type-img" src="../../assets/img/chart-spike.png">
+          </td>
         </tr>
       </table>
     </div>
@@ -23,7 +28,10 @@ export default {
   data: function () {
     return {
       title: this.initTitle['title'],
-      cntTest: this.initTitle['cntTest']
+      cntTest: this.initTitle['cntTest'],
+      success: this.initTitle['success'],
+      fail: this.initTitle['fail'],
+      type: this.initTitle['type']
     }
   }
 }
@@ -57,8 +65,33 @@ export default {
   width: 100%;
   height: 100%;
 }
-.table-top-left{
+.table-top-left {
   border-bottom: 2px solid #DFEEF5;
   border-right: 2px solid #DFEEF5;
+}
+table {
+  table-layout: fixed;
+}
+td {
+  word-break:break-all;
+}
+.load-type-img{
+  width: 200px;
+  height: 65px;
+}
+.gray-font {
+  font-size: 11px;
+  color: #8f9091;
+  padding-left: 20px;
+}
+.success-font {
+  font-size: 20px;
+  color: #1577e5;
+  padding-left: 20px;
+}
+.fail-font {
+  font-size: 20px;
+  color: #ff384f;
+  padding-left: 20px;
 }
 </style>
