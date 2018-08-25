@@ -1,10 +1,9 @@
 <template>
   <div class="rs-header-project">
-      <div class="logo-div">
-        <img src="../../assets/img/rs-full-logo.png" alt="logo">
-      </div>
-
-      <rs-header-project-body></rs-header-project-body>
+    <div class="logo-div">
+      <img src="../../assets/img/rs-full-logo.png" alt="logo">
+    </div>
+    <rs-header-project-body></rs-header-project-body>
   </div>
 </template>
 
