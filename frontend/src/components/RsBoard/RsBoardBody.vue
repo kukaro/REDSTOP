@@ -1,5 +1,6 @@
 <template>
   <div class="rs-board-body">
+    <span class="board-title">Projects</span><img class="btn-project-create" src="../../assets/img/btn-project-create.png"><br><br>
     <ul>
       <li v-for="(value,key) in projectList" :key="key">
         <rs-board-body-item :initProject="value"></rs-board-body-item>
@@ -35,5 +36,14 @@ export default {
 }
 li{
   float: left;
+}
+.board-title {
+  font-size: 30px;
+
+}
+.btn-project-create {
+  float: right;
+  width: 40px;
+  height: 40px;
 }
 </style>

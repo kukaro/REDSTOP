@@ -1,8 +1,7 @@
 <template>
   <div class="rs-header">
     <header>
-      <rs-header-board v-if="true"></rs-header-board>
-      <rs-header-project v-if="false"></rs-header-project>
+      <rs-header-board></rs-header-board>
     </header>
   </div>
 </template>

@@ -19,7 +19,7 @@
   background-color: #445375;
 }
 
-.logo-div > img {
+.logo-div > a > img {
   width: 100%;
   height: 70px;
 }

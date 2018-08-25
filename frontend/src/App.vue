@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <rs-header></rs-header>
     <router-view/>
   </div>
 </template>

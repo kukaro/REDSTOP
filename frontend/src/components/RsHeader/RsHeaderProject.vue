@@ -1,9 +1,11 @@
 <template>
   <div class="rs-header-project">
-    <div class="logo-div">
-      <img src="../../assets/img/rs-full-logo.png" alt="logo">
-    </div>
-    <rs-header-project-body></rs-header-project-body>
+    <header>
+      <div class="logo-div">
+        <a href="#/"><img src="../../assets/img/rs-full-logo.png" alt="logo"></a>
+      </div>
+      <rs-header-project-body></rs-header-project-body>
+    </header>
   </div>
 </template>
 
@@ -17,4 +19,9 @@ export default {
 
 <style>
   @import '../../assets/css/rs-header.css';
+  header {
+    position: relative;
+    height: 60px;
+    z-index: 2;
+  }
 </style>

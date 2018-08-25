@@ -1,10 +1,12 @@
 <template>
   <div class="rs-header-board">
-    <div class="logo-div">
-      <img src="../../assets/img/rs-full-logo.png" alt="logo">
-    </div>
-    <rs-header-board-body></rs-header-board-body>
-    <rs-header-board-setting></rs-header-board-setting>
+    <header>
+      <div class="logo-div">
+        <a href="#/"><img src="../../assets/img/rs-full-logo.png" alt="logo"></a>
+      </div>
+      <rs-header-board-body></rs-header-board-body>
+      <rs-header-board-setting></rs-header-board-setting>
+    </header>
   </div>
 </template>
 
@@ -19,4 +21,9 @@ export default {
 
 <style>
   @import '../../assets/css/rs-header.css';
+  header {
+    position: relative;
+    height: 60px;
+    z-index: 2;
+  }
 </style>
