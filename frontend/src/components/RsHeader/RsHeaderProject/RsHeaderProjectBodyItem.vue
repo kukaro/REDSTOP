@@ -1,5 +1,5 @@
 <template>
-  <div class="rs-header-body-item">
+  <div class="rs-header-project-body-item">
     <a :href="'#/'+itemKebabName" :class="{'active':isOver | isClick}" @mouseover="mouseOver" @mouseleave="mouseLeave">{{itemName}}</a>
   </div>
 </template>
@@ -9,7 +9,7 @@ import casing from 'eslint-plugin-vue/lib/utils/casing'
 
 export default {
   props: ['initItemName', 'initIsClick'],
-  name: 'rs-header-body-item',
+  name: 'rs-header-project-body-item',
   watch: {
     initIsClick: function () {
       this.isClick = this.initIsClick

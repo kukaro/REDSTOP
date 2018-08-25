@@ -1,9 +1,9 @@
 <template>
-  <div class="rs-header-body">
+  <div class="rs-header-project-body">
     <div class="menuDiv">
       <ul>
         <li v-for="(value, key) in itemList" :key="key" @click="mouseClick(key)">
-          <rs-header-body-item :initItemName="value" :initIsClick="clickNumber==key"></rs-header-body-item>
+          <rs-header-project-body-item :initItemName="value" :initIsClick="clickNumber==key"></rs-header-project-body-item>
         </li>
       </ul>
     </div>
@@ -11,14 +11,13 @@
 </template>
 
 <script>
-import RsHeaderBodyItem from './RsHeaderBodyItem'
+import RsHeaderProjectBodyItem from './RsHeaderProjectBodyItem'
 export default {
-  name: 'rs-header-body',
-  components: {RsHeaderBodyItem},
+  name: 'rs-header-poject-body',
+  components: {RsHeaderProjectBodyItem},
   created: function () {
     this.$http.get('http://localhost:3000/api/header').then((response) => {
       this.itemList = response.data
-      console.log(this.itemList)
     })
   },
   data: function () {
@@ -37,4 +36,11 @@ export default {
 </script>
 
 <style>
+  .menuDiv {
+    position: absolute;
+    left: 20%;
+    width: 80%;
+    height: 70px;
+    background-color: #536285;
+  }
 </style>

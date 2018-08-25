@@ -1,28 +1,23 @@
 <template>
   <div class="rs-header">
     <header>
-      <div class="logo-div">
-        <img src="../assets/img/rs-full-logo.png" alt="logo">
-      </div>
-
-      <rs-headrer-body></rs-headrer-body>
-
-      <div class="userInfoDiv">
-
-      </div>
+      <rs-header-project></rs-header-project>
     </header>
-
   </div>
 </template>
 
 <script>
-import RsHeadrerBody from './RsHeader/RsHeaderBody'
+import RsHeaderProject from './RsHeaderProject'
 export default {
   name: 'rs-header',
-  components: {RsHeadrerBody}
+  components: {RsHeaderProject}
 }
 </script>
 
 <style>
-@import '../assets/css/rs-header.css';
+  header {
+    position: relative;
+    height: 60px;
+    z-index: 2;
+  }
 </style>
