@@ -1,6 +1,6 @@
 <template>
   <div id="root">
-    hi
+
   </div>
 </template>
 
@@ -10,7 +10,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   #root {
     margin-top: 10px;
   }
