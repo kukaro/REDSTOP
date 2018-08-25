@@ -13,6 +13,7 @@
 header {
   position: relative;
   height: 60px;
+  z-index: 2;
 }
 
 .logo-div {
@@ -43,4 +44,5 @@ header {
   width: 100%;
   height: 70px;
 }
+
 

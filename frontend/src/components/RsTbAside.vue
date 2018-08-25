@@ -35,9 +35,16 @@ export default {
 
 <style scoped>
   aside {
-    margin-top: 60px;
-    margin-left: 60px;
+    background-color: white;
+    position: absolute;
+    padding-top: 60px;
+    margin-left: 60%;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 40%;
+    height: 100%;
     margin-right: 40px;
     float: right;
+    z-index: 1;
   }
 </style>

@@ -24,5 +24,6 @@ nav {
   width: 20%;
   height: 100%;
   background-color: #ffffff;
+  border-right: 1px solid #F2F7FB;
 }
 </style>
