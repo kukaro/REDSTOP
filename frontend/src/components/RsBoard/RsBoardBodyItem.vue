@@ -1,5 +1,5 @@
 <template>
-  <div class="rs-board-body-item">
+  <div class="rs-board-body-item" @click="mouseClick(project)">
     <span class="item-title">{{title}}</span><br>
     <span class="item-test-case">{{cntTest}} Test Cases</span><br><br>
     <div class="item-div-table">
@@ -23,15 +23,21 @@
 
 <script>
 export default {
-  props: ['initTitle'],
+  props: ['initProject'],
   name: 'rs-board-body-item',
   data: function () {
     return {
-      title: this.initTitle['title'],
-      cntTest: this.initTitle['cntTest'],
-      success: this.initTitle['success'],
-      fail: this.initTitle['fail'],
-      type: this.initTitle['type']
+      project: this.initProject,
+      title: this.initProject['title'],
+      cntTest: this.initProject['cntTest'],
+      success: this.initProject['success'],
+      fail: this.initProject['fail'],
+      type: this.initProject['type']
+    }
+  },
+  methods: {
+    mouseClick: function (project) {
+      this.$router.push('test-block')
     }
   }
 }

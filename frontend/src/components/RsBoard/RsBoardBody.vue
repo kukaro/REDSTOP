@@ -2,7 +2,7 @@
   <div class="rs-board-body">
     <ul>
       <li v-for="(value,key) in projectList" :key="key">
-        <rs-board-body-item :initTitle="value"></rs-board-body-item>
+        <rs-board-body-item :initProject="value"></rs-board-body-item>
       </li>
     </ul>
   </div>
