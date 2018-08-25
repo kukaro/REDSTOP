@@ -31,5 +31,6 @@ html, body{
 #app{
   height: 100%;
   background-color: #F1F7FB;
+  overflow: scroll;
 }
 </style>
