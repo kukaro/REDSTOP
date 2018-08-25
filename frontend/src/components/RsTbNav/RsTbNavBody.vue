@@ -9,6 +9,7 @@
 </template>
 
 <script>
+/* eslint-disable */
 import RsTbNavBodyTree from './RsTbNavBodyTree'
 export default {
   name: 'rs-tb-nav-body',
