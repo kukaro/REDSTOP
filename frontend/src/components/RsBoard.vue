@@ -1,14 +1,15 @@
 <template>
   <div class="rs-board">
-    <span class="board-title">Projects</span><br><br>
-    <div class="board-body"></div>
-    <div style="background-color: black;width: 100px;height: 100px"></div>
+    <span class="board-title">Projects</span><br>
+    <rs-board-body></rs-board-body>
   </div>
 </template>
 
 <script>
+import RsBoardBody from './RsBoard/RsBoardBody'
 export default {
-  name: 'rs-board'
+  name: 'rs-board',
+  components: {RsBoardBody}
 }
 </script>
 
@@ -19,9 +20,5 @@ export default {
 }
 .board-title {
   font-size: 30px;
-}
-.board-body {
-  width: 100%;
-  height: 100%;
 }
 </style>
