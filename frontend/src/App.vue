@@ -25,4 +25,12 @@ export default {
   /*color: #2c3e50;*/
   /*margin-top: 60px;*/
 /*}*/
+html, body{
+  width: 100%;
+  height: 100%;
+}
+#app{
+  height: 100%;
+  background-color: #F1F7FB;
+}
 </style>
