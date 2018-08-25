@@ -1,7 +1,7 @@
 <template>
   <div class="rs-header-project">
       <div class="logo-div">
-        <img src="../assets/img/rs-full-logo.png" alt="logo">
+        <img src="../../assets/img/rs-full-logo.png" alt="logo">
       </div>
 
       <rs-header-project-body></rs-header-project-body>
@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import RsHeaderProjectBody from './RsHeader/RsHeaderProject/RsHeaderProjectBody'
+import RsHeaderProjectBody from './RsHeaderProject/RsHeaderProjectBody'
 export default {
   name: 'rs-header-project',
   components: {RsHeaderProjectBody}
@@ -17,5 +17,5 @@ export default {
 </script>
 
 <style>
-  @import '../assets/css/rs-header.css';
+  @import '../../assets/css/rs-header.css';
 </style>
