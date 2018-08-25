@@ -11,6 +11,7 @@
 </template>
 
 <script>
+/* eslint-disable */
 import RsTbAsideTitle from './RsTbAside/RsTbAsideTitle'
 import RsTbAsideAblockApi from './RsTbAside/RsTbAsideAblockApi'
 import RsTbAsideAblockAssertion from './RsTbAside/RsTbAsideAblockAssertion'
@@ -46,5 +47,6 @@ export default {
     margin-right: 40px;
     float: right;
     z-index: 1;
+    overflow: scroll;
   }
 </style>

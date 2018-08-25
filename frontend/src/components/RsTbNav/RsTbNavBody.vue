@@ -39,11 +39,11 @@ export default {
           }]
         },
         {
-          name: 'Preferences',
-          type: 'g',
-          children: [{
-            name: 'Change User Info',
-            type: 'c',
+            name: 'Preferences',
+            type: 'g',
+            children: [{
+              name: 'Change User Info',
+              type: 'c',
             children: [{
               name: 'Post',
               type: 'a',
