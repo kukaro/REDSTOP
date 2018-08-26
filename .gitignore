@@ -1,3 +1,10 @@
+#jetbrains editor setting file
+.idea
+
+#nodejs
 .idea
 node_modules
 package-lock.json
+
+#R language
+.Rhistory
