@@ -1,7 +1,7 @@
 <template>
   <div class="rs-board-body-modal-create-button">
-    <div :class="[{'rs-modal':isModal}]" @click="mouseClick">
-      <div :class="[{'rs-modal-content':isModal}]" :style="{display:isModal?'block':'none'}">
+    <div :class="[{'rs-modal':isModal}]" :style="{display:isModal?'block':'none'}">
+      <div class="rs-modal-content">
         <span class="rs-board-body-modal-title">Create Project</span><br>
         <span class="rs-board-body-modal-main">Please tell me your project name</span><br><br>
         <input class="rs-input-project-name" type="text" placeholder="Project name"><br><br>
@@ -10,6 +10,7 @@
           <input class="rs-btn-cancle" type="button" value="CANCLE">
         </div>
       </div>
+      <img class="rs-board-body-modal-close" src="../../assets/img/create-proejct-close.png" @click="mouseClick">
     </div>
   </div>
 </template>
@@ -97,5 +98,14 @@ export default {
   background-color: #1c1f28;
   color: white;
   box-shadow: 0 2px 4px 0 #c6d5e9;
+}
+
+.rs-board-body-modal-close{
+  position: fixed;
+  top: calc(50% - 110px);
+  left: calc(50% + 175px);
+  margin-left: 5px;
+  width: 44px;
+  height: 44px;
 }
 </style>
