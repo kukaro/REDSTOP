@@ -1,6 +1,8 @@
 <template>
   <div class="rs-board-body">
-    <span class="board-title">Projects</span><img class="btn-project-create" src="../../assets/img/btn-project-create.png"><br><br>
+    <span class="board-title">Projects</span>
+      <div class="board-btn-div"><rs-board-body-create-button/></div>
+    <br><br>
     <ul>
       <li v-for="(value,key) in projectList" :key="key">
         <rs-board-body-item :initProject="value"></rs-board-body-item>
@@ -11,9 +13,10 @@
 
 <script>
 import RsBoardBodyItem from './RsBoardBodyItem'
+import RsBoardBodyCreateButton from './RsBoardBodyCreateButton'
 export default {
   name: 'rs-board-body',
-  components: {RsBoardBodyItem},
+  components: {RsBoardBodyCreateButton, RsBoardBodyItem},
   data: function () {
     return {
       projectList: [{'title': 'SK Tech X', 'cntTest': 25, 'success': 72, 'fail': 28, 'type': 'baseline'},
@@ -38,12 +41,11 @@ li{
   float: left;
 }
 .board-title {
+  float: left;
   font-size: 30px;
-
 }
-.btn-project-create {
+.board-btn-div {
   float: right;
-  width: 40px;
-  height: 40px;
+  width: 90%;
 }
 </style>
