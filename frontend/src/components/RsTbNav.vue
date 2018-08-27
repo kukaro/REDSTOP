@@ -19,7 +19,7 @@ export default {
 <style>
 nav {
   position: absolute;
-  top: 70px;
+  top: 50px;
   left: 0;
   width: 20%;
   height: 100%;

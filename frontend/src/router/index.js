@@ -4,6 +4,8 @@ import RsBoard from '@/components/RsBoard'
 import RsTb from '@/components/RsTb'
 import RsTbAside from '@/components/RsTbAside'
 
+import RsMonitoring from '@/components/RsMonitoring'
+
 Vue.use(Router)
 
 export default new Router({
@@ -25,6 +27,11 @@ export default new Router({
           props: true
         }
       ]
+    },
+    {
+      path: '/monitoring',
+      name: 'rs-monitoring',
+      component: RsMonitoring
     }
   ]
 })
