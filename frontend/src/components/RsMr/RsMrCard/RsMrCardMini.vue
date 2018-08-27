@@ -1,5 +1,5 @@
 <template>
-  <div id="test" ref="hi" class="rs-mr-card-mini" :style="{'margin': '20px', 'width': width, 'height': height+'px', 'left': left, 'top': top + 'px', 'background-color': backgroundColor}">
+  <div id="test" class="rs-mr-card-mini" :style="{'margin': '20px', 'width': width, 'height': height+'px', 'left': left, 'top': top + 'px', 'background-color': backgroundColor}">
     <rs-util-text :init-value="'TOTAL APIS'" :init-color="'#5e5e5e'" :init-size="13"/>
     <rs-util-text :init-value="43" :init-color="'#4da1ff'" :init-size="50"/>
   </div>
@@ -15,10 +15,12 @@ export default {
     // console.log(document.getElementById('test').offsetWidth)
   },
   mounted: function () {
-    this.height = this.$el.clientWidth / 2.5 * this.initHeight
-    this.top = this.$el.clientWidth / 2.5 * (this.initYPos - 1)
-    console.log(this.top)
+    this.height = this.$el.clientWidth / 2.5 * this.initHeight / this.initWidth
+    // TODO 이거 바꿔야함, header 크기를 raw하게 받음
+    this.top = this.$el.clientWidth / 2.5 * (this.initYPos - 1) / this.initWidth + 70
+    // console.log(this.top)
     // console.log(this.height)
+    // console.log(this.$refs)
   },
   components: {RsUtilText},
   data: function () {
