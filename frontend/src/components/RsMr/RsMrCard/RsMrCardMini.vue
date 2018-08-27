@@ -1,7 +1,10 @@
 <template>
-  <div id="test" class="rs-mr-card-mini" :style="{'margin': '20px', 'width': width, 'height': height+'px', 'left': left, 'top': top + 'px', 'background-color': backgroundColor}">
-    <rs-util-text :init-value="'TOTAL APIS'" :init-color="'#5e5e5e'" :init-size="13"/>
-    <rs-util-text :init-value="43" :init-color="'#4da1ff'" :init-size="50"/>
+  <div id="test" class="rs-mr-card-mini" :style="{'margin': '20px', 'width': width, 'height': height+'px', 'left': left, 'top': top + 'px'}">
+    <div class="inner" :style="{'background-color': backgroundColor}">
+      <rs-util-text :init-value="'TOTAL APIS'" :init-color="'#5e5e5e'" :init-size="13"/><img src="../../../assets/img/function-icon.png"> <br>
+      <rs-util-text :init-value="43" :init-color="'#4da1ff'" :init-size="50"/>
+      <rs-util-text :init-value="'APIs'" :init-color="'#979797'" :init-size="13"/>
+    </div>
   </div>
 </template>
 
@@ -39,6 +42,19 @@ export default {
 .rs-mr-card-mini {
   z-index: 4;
   position: absolute;
+  padding: 10px;
+}
+.inner{
+  padding: 13px;
+  width: 100%;
+  height: 100%;
   background-color: white;
+  box-shadow: 0 2px 4px 0 #a6b7cd;
+  border-radius: 8px;
+}
+img {
+  width: 28px;
+  height: 6px;
+  float: right;
 }
 </style>
