@@ -12,7 +12,7 @@ import RsTbNavHeader from './RsTbNav/RsTbNavHeader'
 import RsTbNavBody from './RsTbNav/RsTbNavBody'
 export default {
   name: 'rs-tb-nav',
-  components: {RsTbNavBody, RsTbNavHeader}
+  components: { RsTbNavBody, RsTbNavHeader }
 }
 </script>
 

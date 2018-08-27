@@ -8,16 +8,13 @@
       </div>
 
       <div class="blockWrapper">
-
-        <div id="blocklyDiv">
-        </div>
+        <div id="blocklyDiv"></div>
 
         <xml id="toolbox" style="height: 100px; position: absolute; right: 0;">
           <block type="testgroup"></block>
           <block type="testCase"></block>
           <block type="api"></block>
         </xml>
-
       </div>
     </div>
   </div>

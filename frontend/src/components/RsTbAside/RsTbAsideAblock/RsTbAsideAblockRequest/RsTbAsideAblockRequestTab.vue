@@ -31,5 +31,5 @@ export default {
 </script>
 
 <style scoped>
-@import '../../../assets/css/RsTbAside/RsTbAsideAblockRequest/RsTbAsideAblockRequestTab.css'
+@import '../../../../assets/css/RsTbAside/RsTbAsideAblockRequest/RsTbAsideAblockRequestTab.css'
 </style>

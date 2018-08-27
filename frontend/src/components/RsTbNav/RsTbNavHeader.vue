@@ -25,6 +25,7 @@ export default {
   methods: {
     mouseClick: function (key) {
       this.clickNumber = key
+      // console.log(this.clickNumber)
     }
   }
 }

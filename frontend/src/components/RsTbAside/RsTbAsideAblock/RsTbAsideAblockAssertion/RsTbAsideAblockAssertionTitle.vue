@@ -1,6 +1,6 @@
 <template>
     <div class="rs-tb-aside-ablock-assertion-title">
-      <img id="assert-icon" src="../../../assets/img/bullet-title.png">
+      <img id="assert-icon" src="../../../../assets/img/bullet-title.png">
       Assertion
     </div>
 </template>

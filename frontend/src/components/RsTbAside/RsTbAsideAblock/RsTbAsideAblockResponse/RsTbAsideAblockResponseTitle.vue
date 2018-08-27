@@ -1,6 +1,6 @@
 <template>
     <div class="rs-tb-aside-ablock-response-title">
-      <img class="response-icon" src="../../../assets/img/bullet-title.png">
+      <img class="response-icon" src="../../../../assets/img/bullet-title.png">
       Response
       &nbsp;&nbsp;<span class="gray-font">Status : <span class="sky-font">{{responseData.status}}</span> | </span>
       &nbsp;<span class="gray-font">Time : {{responseData.time}} ms | </span>

@@ -1,6 +1,6 @@
 <template>
     <div class="rs-tb-aside-ablock-request-title">
-      <img class="request-icon" src="../../../assets/img/bullet-title.png">
+      <img class="request-icon" src="../../../../assets/img/bullet-title.png">
       Request
     </div>
 </template>
