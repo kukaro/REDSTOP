@@ -37,17 +37,20 @@
                 {
                   "name": "Post",
                   "type": "a",
-                  "method": "post"
+                  "method": "post",
+                  "url": "http://localhost:3000/api/post"
                 },
                 {
                   "name": "Verify Email",
                   "type": "a",
-                  "method": "get"
+                  "method": "get",
+                  "url": "http://localhost:3000/api/verify-email"
                 },
                 {
                   "name": "Sign in",
                   "type": "a",
-                  "method": "post"
+                  "method": "post",
+                  "url": "http://localhost:3000/api/sign-in"
                 }
               ]
             }
