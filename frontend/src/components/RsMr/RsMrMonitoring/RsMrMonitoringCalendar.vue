@@ -78,14 +78,14 @@ export default {
   #from {
     width: 203px;
     height: 32px;
-    background: url(../../assets/img/calendar.png) no-repeat 90% 50%;
+    background: url(../../../assets/img/calendar.png) no-repeat 90% 50%;
     background-size: 15px;
   }
 
   #to {
     width: 203px;
     height: 32px;
-    background: url(../../assets/img/calendar.png) no-repeat 90% 50%;
+    background: url(../../../assets/img/calendar.png) no-repeat 90% 50%;
     background-size: 15px;
   }
 </style>

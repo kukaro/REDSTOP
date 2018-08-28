@@ -1,6 +1,5 @@
 <template>
-  <div class="rs-monitoring">
-    <rs-header-project></rs-header-project>
+  <div class="rs-mr=monitoring">
     <rs-calendar></rs-calendar>
     <ul>
       <li v-for="(value,key) in apiList" :key="key">
@@ -12,11 +11,11 @@
 </template>
 
 <script>
-import RsHeaderProject from './RsHeader/RsHeaderProject'
-import RsCalendar from './RsMonitoring/RsCalendar'
-import RsMonitoringItem from './RsMonitoring/RsMonitoringItem'
+import RsHeaderProject from '../RsHeader/RsHeaderProject'
+import RsCalendar from './RsMrMonitoring/RsMrMonitoringCalendar'
+import RsMonitoringItem from './RsMrMonitoring/RsMrMonitoringItem'
 export default {
-  name: 'rs-monitoring',
+  name: 'rs-mr-monitoring',
   components: {RsHeaderProject, RsCalendar, RsMonitoringItem},
   created () {
     this.$http.get('http://localhost:3000/api/apiList')

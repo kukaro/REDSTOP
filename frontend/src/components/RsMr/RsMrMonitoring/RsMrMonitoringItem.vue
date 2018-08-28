@@ -1,10 +1,10 @@
 <template>
   <div class="rs-monitoring-item" @click="mouseClick(project)">
-    <img v-if="state==='default'" src="../../assets/img/monitoring-block_default.png">
+    <img v-if="state==='default'" src="../../../assets/img/monitoring-block_default.png">
 
-    <img v-if="state==='warning'" src="../../assets/img/monitoring-warning.png">
+    <img v-if="state==='warning'" src="../../../assets/img/monitoring-warning.png">
 
-    <img v-if="state==='dangerous'" src="../../assets/img/monitoring-dangerous.png">
+    <img v-if="state==='dangerous'" src="../../../assets/img/monitoring-dangerous.png">
   </div>
 </template>
 
