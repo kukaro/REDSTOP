@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import RsBoard from '@/components/RsBoard'
 import RsTb from '@/components/RsTb'
 import RsTbAside from '@/components/RsTbAside'
+import RsMr from '@/components/RsMr'
 
 import RsMonitoring from '@/components/RsMonitoring'
 

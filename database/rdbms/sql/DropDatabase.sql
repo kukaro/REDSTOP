@@ -1,0 +1,1 @@
+drop database rs_db;
