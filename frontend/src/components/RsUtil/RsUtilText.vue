@@ -11,8 +11,8 @@ export default {
   data: function () {
     return {
       value: this.initValue,
-      color: this.initColor,
-      size: this.initSize
+      color: this.initColor ? this.initColor : '#000000',
+      size: this.initSize ? this.initSize : 14
     }
   }
 }

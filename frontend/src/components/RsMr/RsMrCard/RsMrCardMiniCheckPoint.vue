@@ -1,9 +1,15 @@
 <template>
-  <div id="test" class="rs-mr-card-mini-total-apis rs-mr-card" :style="{'margin': '20px', 'width': width, 'height': height+'px', 'left': left, 'top': top + 'px'}">
+  <div id="test" class="rs-mr-card-mini-check-point rs-mr-card" :style="{'margin': '20px', 'width': width, 'height': height+'px', 'left': left, 'top': top + 'px'}">
     <div class="inner" :style="{'background-color': backgroundColor}">
-      <rs-util-text :init-value="'TOTAL APIS'" :init-color="'#5e5e5e'" :init-size="13"/><img src="../../../assets/img/function-icon.png"> <br>
-      <rs-util-text :init-value="apiCnt" :init-color="'#4da1ff'" :init-size="50"/>
-      <rs-util-text :init-value="'APIs'" :init-color="'#979797'" :init-size="13"/>
+      <rs-util-text :init-value="'CHECK POINT'" :init-color="'#8d5f19'" :init-size="13"/><img src="../../../assets/img/function-icon.png"> <br>
+      <div class="rs-left-div">
+        <rs-util-text :init-value="'Running : ' + running" :init-color="'#ffffff'" :init-size="15"/><br>
+        <rs-util-text :init-value="'False : ' + falseCnt" :init-color="'#ffffff'" :init-size="15"/>
+      </div>
+      <div class="rs-left-div">
+        <rs-util-text :init-value="'Inactive : ' + inactive" :init-color="'#ffffff'" :init-size="15"/><br>
+        <rs-util-text :init-value="'Total : ' + total" :init-color="'#ffffff'" :init-size="15"/>
+      </div>
     </div>
   </div>
 </template>
@@ -12,8 +18,8 @@
 import RsUtilText from '../../RsUtil/RsUtilText'
 
 export default {
-  props: ['initWidth', 'initHeight', 'initXPos', 'initYPos', 'initBackgroundColor', 'initApiCnt'],
-  name: 'rs-mr-card-mini-total-apis',
+  props: ['initWidth', 'initHeight', 'initXPos', 'initYPos', 'initBackgroundColor', 'initRunning', 'initFalseCnt', 'initInactive', 'initTotal'],
+  name: 'rs-mr-card-mini-check-point',
   created: function () {
     // console.log(this.initXPos, this.initYPos)
     // console.log(document.getElementById('test').offsetWidth)
@@ -33,8 +39,11 @@ export default {
       height: 130 * (this.initHeight ? this.initHeight : 1),
       left: 100 / 6 * (this.initXPos - 1) + '%',
       top: 130 * (this.initYPos - 1) + 70,
-      backgroundColor: this.initBackgroundColor ? this.initBackgroundColor : '#ffffff',
-      apiCnt: this.initApiCnt
+      backgroundColor: this.initBackgroundColor ? this.initBackgroundColor : '#ffc665',
+      running: this.initRunning,
+      falseCnt: this.initFalseCnt,
+      inactive: this.initInactive,
+      total: this.initTotal
     }
   }
 }
@@ -58,5 +67,10 @@ img {
   width: 28px;
   height: 6px;
   float: right;
+}
+.rs-left-div {
+  padding-right: 30px;
+  padding-top: 10px;
+  float: left;
 }
 </style>
