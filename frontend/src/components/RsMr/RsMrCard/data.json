@@ -1,0 +1,50 @@
+{
+  "data": [
+    {
+      "responseTime": 1.7,
+      "time": "15:30",
+      "status": "d"
+      // warning, defulat
+    },
+    {
+      "responseTime": 3,
+      "time": "15:35",
+      "status": "d"
+    },
+    {
+      "responseTime": 2,
+      "time": "15:40",
+      "status": "w"
+    },
+    {
+      "responseTime": 5.5,
+      "time": "15:40",
+      "status": "b"
+    },
+    {
+      "responseTime": 4.4,
+      "time": "15:45",
+      "status": "w"
+    },
+    {
+      "responseTime": 5,
+      "time": "15:50",
+      "status": "b"
+    },
+    {
+      "responseTime": 4.8,
+      "time": "15:50",
+      "status": "b"
+    },
+    {
+      "responseTime": 4.6,
+      "time": "15:50",
+      "status": "d"
+    },
+    {
+      "responseTime": 6.2,
+      "time": "16:00",
+      "status": "b"
+    },
+  ]
+}

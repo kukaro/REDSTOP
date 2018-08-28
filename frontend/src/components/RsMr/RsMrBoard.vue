@@ -18,11 +18,12 @@ import RsMrCardMiniResponseTime from './RsMrCard/RsMrCardMiniResponseTime'
 export default {
   name: 'rs-mr-board',
   components: {
-    RsMrCardMiniResponseTime,
-    RsMrCardMiniCheckPoint, RsMrCardMiniAvgP95, RsMrCardMiniTotalAvailability, RsMrCardMiniTotalApis, RsUtilText},
+    RsMrCardMiniResponseTime, RsMrCardMiniCheckPoint, RsMrCardMiniAvgP95, RsMrCardMiniTotalAvailability, RsMrCardMiniTotalApis, RsUtilText},
   data: function () {
     return {
-      test: 'total apis'
+      heatMapData: {
+
+      }
     }
   }
 }
