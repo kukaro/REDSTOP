@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import RsUtilText from './RsUtil/RsUtilText'
-import RsMrCardMini from './RsMr/RsMrCard/RsMrCardMini'
+import RsUtilText from '../RsUtil/RsUtilText'
+import RsMrCardMini from './RsMrCard/RsMrCardMiniTotalApis'
 export default {
   name: 'rs-mr-board',
   components: {RsMrCardMini, RsUtilText},

@@ -4,6 +4,8 @@ import RsBoard from '@/components/RsBoard'
 import RsTb from '@/components/RsTb'
 import RsTbAside from '@/components/RsTbAside'
 import RsMr from '@/components/RsMr'
+import RsMrMonitoring from '@/components/RsMr/RsMrMonitoring'
+import RsMrBoard from '@/components/RsMr/RsMrBoard'
 Vue.use(Router)
 
 export default new Router({
@@ -20,7 +22,7 @@ export default new Router({
       children: [
         {
           path: ':url',
-          name: 'rs-tb2_singleurl',
+          name: 'rs-tb2-singleurl',
           component: RsTbAside,
           props: true
         }
@@ -29,7 +31,19 @@ export default new Router({
     {
       path: '/monitoring',
       name: 'rs-mr',
-      component: RsMr
+      component: RsMr,
+      children: [
+        {
+          path: 'monitoring',
+          name: 'rs-mr-monitoring',
+          component: RsMrMonitoring
+        },
+        {
+          path: 'board',
+          name: 'rs-mr-board',
+          component: RsMrBoard
+        }
+      ]
     }
   ]
 })
