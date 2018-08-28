@@ -1,10 +1,10 @@
 var express = require('express');
 var router = express.Router();
+var responseTimeList = require('./response-time.json');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    var headerList = ['Test Block','Scenario','Report','Monitoring','Scheduler'];
-    res.send(headerList);
+    res.send(responseTimeList);
 });
 
 module.exports = router;
