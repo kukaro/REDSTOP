@@ -26,11 +26,6 @@ export default new Router({
           props: true
         }
       ]
-    },
-    {
-      path: '/monitoring',
-      name: 'rs-mr',
-      component: RsMr
     }
   ]
 })
