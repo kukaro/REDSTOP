@@ -69,8 +69,8 @@ img {
   float: right;
 }
 .rs-left-div {
-  padding-right: 30px;
-  padding-top: 10px;
+  padding-right: 5px;
+  padding-top: 5px;
   float: left;
 }
 </style>
