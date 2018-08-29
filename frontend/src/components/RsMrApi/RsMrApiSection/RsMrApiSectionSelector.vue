@@ -8,9 +8,19 @@
         <li style="width: 50%;float: right;height: 30px; text-align: right">
           <span class="more">MORE</span>
           <img src="../../../assets/img/arrow-more.png" width="8px" height="8px">
-          <!--for돌면서 아이템 뿌리기-->
+          <!--for돌면서 아이템 뿌리기 일단은 임시로 해 놨습니다....-->
         </li>
       </ul>
+
+      <ul>
+        <li style="width: 15%;float: left;height: 30px">
+          <span class="item" style="width: 30%">KT</span>
+        </li>
+        <li style="width: 45%;float: left;height: 30px">
+          <span class="item" style="width: 30%">SKT</span>
+        </li>
+      </ul>
+
     </div>
     <div class="card">
       <ul>
@@ -20,7 +30,16 @@
         <li style="width: 50%;float: right;height: 30px; text-align: right">
           <span class="more">MORE</span>
           <img src="../../../assets/img/arrow-more.png" width="8px" height="8px">
-          <!--for돌면서 아이템 뿌리기-->
+          <!--for돌면서 아이템 뿌리기 일단은 임시로 해 놨습니다...-->
+        </li>
+      </ul>
+
+      <ul>
+        <li style="width: 15%;float: left;height: 30px">
+          <span class="item" style="width: 30%">iOS</span>
+        </li>
+        <li style="width: 15%; float: left;height: 30px">
+          <span class="item" style="width: 30%">Android</span>
         </li>
       </ul>
     </div>
@@ -80,6 +99,18 @@ export default {
   letter-spacing: -0.1px;
   text-align: right;
   color: #989898;
+}
+ul {
+  margin-bottom: 0;
+}
+.item{
+  width: 62px;
+  height: 35px;
+  font-family: AppleSDGothicNeo;
+  font-size: 13px;
+  line-height: 2.69;
+  letter-spacing: -0.3px;
+  color: #233539;
 }
 
 </style>

@@ -94,9 +94,10 @@ export default {
 
 <style scoped>
 .rs-mr-api-aside-table {
+  /*position: absolute;*/
    width: 100%;
    height: 30%;
-  padding-top: 5px;
+  padding-top: 100px;
   padding-right: 5px;
   padding-left: 10px;
 }
