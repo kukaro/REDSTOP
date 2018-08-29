@@ -3,7 +3,7 @@
     <aside>
       <rs-mr-api-aside-summary></rs-mr-api-aside-summary>
       <rs-mr-api-aside-policy></rs-mr-api-aside-policy>
-      <rs-mr-api-aside-heatmap></rs-mr-api-aside-heatmap>
+      <rs-mr-api-aside-heatmap></rs-mr-api-aside-heatmap><br><br><br><br><br><br><br>
       <rs-mr-api-aside-table></rs-mr-api-aside-table>
     </aside>
   </div>
