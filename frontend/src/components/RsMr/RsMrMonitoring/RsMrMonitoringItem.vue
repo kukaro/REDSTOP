@@ -22,7 +22,7 @@ export default {
   },
   methods: {
     mouseClick: function (project) {
-      this.$router.push(this.initApi['title'])
+      this.$router.push('/monitoring/' + this.initApi['title'])
     }
   }
 }
