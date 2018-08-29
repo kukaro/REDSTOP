@@ -3,9 +3,10 @@ import Router from 'vue-router'
 import RsBoard from '@/components/RsBoard'
 import RsTb from '@/components/RsTb'
 import RsTbAside from '@/components/RsTbAside'
-import RsMr from '@/components/RsMr'
+// import RsMr from '@/components/RsMr'
 
 import RsMonitoring from '@/components/RsMonitoring'
+import RsMrApi from '@/components/RsMrApi'
 
 Vue.use(Router)
 
@@ -33,6 +34,11 @@ export default new Router({
       path: '/monitoring',
       name: 'rs-monitoring',
       component: RsMonitoring
+    },
+    {
+      path: '/temp',
+      name: 'rs-mr-api',
+      component: RsMrApi
     }
   ]
 })
