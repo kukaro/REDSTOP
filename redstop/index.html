@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>RedStop</title>
+    <script src="https://unpkg.com/vue"></script>
+
+    <script src="path/blockly_compressed.js"></script>
+    <script src="path/blocks_compressed.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body topmargin="0" leftmargin="0" marginwidth="0" marginheight="0">
+    <div class="wrapper">
+        <header>
+            <div class="logoDiv">
+                <img src="images/logo.png" alt="logo">
+            </div>
+
+            <div class="menuDiv">
+                <ul class="menu">
+                    <li>Test Block</li>
+                    <li>Scenario</li>
+                    <li>Report</li>
+                    <li>Monitoring</li>
+                    <li>Scheduler</li>
+                </ul>
+            </div>
+
+            <div class="userInfoDiv">
+
+            </div>
+        </header>
+
+        <div class="treeView">
+            <ul class="treeViewMenu">
+                <li><b>Explorer</b></li>
+                <li><b>History</b></li>
+            </ul>
+
+            <div class="tabBottomView">
+                <ul id="demo">
+                    <item class="item" :model="treeData">
+                    </item>
+                    <item class="item" :model="treeData2">
+                    </item>
+                </ul>
+            </div>
+        </div>
+
+        <div class="blockView">
+            <div class="popup" style="z-index: 99999999;">
+                <img src="images/ico-blank@3x.png" width="45px" height="63px"><br><br>
+                <p>왼쪽 블럭을 끌어다 놓으세요!
+                    <p>
+            </div>
+
+            <div class="blockWrapper">
+
+                <div id="blocklyDiv">
+                </div>
+
+                <xml id="toolbox" style="height: 100px; position: absolute; right: 0;">
+                    <block type="testgroup"></block>
+                    <block type="testCase"></block>
+                    <block type="api"></block>
+                </xml>
+            </div>
+        </div>
+    </div>
+
+    <!--
+        <div id="app">
+
+        </div>
+        -->
+
+    <script type="text/javascript" src="js/jquery-1.12.3.js"></script>
+    <script>
+        var workspace = Blockly.inject('blocklyDiv', {
+            media: 'path/media/',
+            toolbox: document.getElementById('toolbox')
+        });
+
+        function onFirstComment(event) {
+            if (event.type == Blockly.Events.MOVE) {
+                var xml = Blockly.Xml.workspaceToDom(workspace);
+                var xml_text = Blockly.Xml.domToText(xml);
+                console.log(xml_text);
+                $(".popup").hide();
+            }
+
+            if (event.type == Blockly.Events.DELETE) {
+                var xml = Blockly.Xml.workspaceToDom(workspace);
+                var xml_text = Blockly.Xml.domToText(xml);
+                if (xml_text == "<xml xmlns=\"http://www.w3.org/1999/xhtml\"><variables></variables></xml>") {
+                    $(".popup").show();
+                    //
+                }
+            }
+        }
+        workspace.addChangeListener(onFirstComment);
+
+    </script>
+</body>
+
+<script type="text/x-template" id="item-template">
+    <li>
+        <div :class="{bold: isFolder}" @click="toggle">
+            {{model.name}}
+            <span v-if="isFolder">{{open ? 'v' : '>'}}</span>
+        </div>
+        <ul v-show="open" v-if="isFolder">
+            <item class="item" v-for="model in model.children" :model="model">
+            </item>
+            <li class="add" @click="addChild">+</li>
+        </ul>
+    </li>
+</script>
+
+<script type="text/javascript">
+    // demo data
+    var data = {
+        name: 'User Management',
+        children: [{
+                name: 'Sign',
+                children: [{
+                        name: 'Sign Up'
+                    },
+                    {
+                        name: 'Sign In'
+                    },
+                    {
+                        name: 'Sign Out'
+                    },
+                    {
+                        name: 'Verify Email'
+                    }
+                ]
+            },
+            {
+                name: 'Preferences',
+                children: [{
+                    name: 'Change User Info'
+                }]
+            }
+        ]
+    }
+    var data2 = {
+        name: 'Payment',
+        children: [{
+            name: 'Sign',
+            children: [{
+                    name: 'Sign Up'
+                },
+                {
+                    name: 'Sign In'
+                },
+                {
+                    name: 'Sign Out'
+                },
+                {
+                    name: 'Verify Email'
+                }
+            ]
+        }]
+    }
+    // define the item component
+    Vue.component('item', {
+        template: '#item-template',
+        props: {
+            model: Object
+        },
+        data: function() {
+            return {
+                open: false
+            }
+        },
+        computed: {
+            isFolder: function() {
+                return this.model.children &&
+                    this.model.children.length
+            }
+        },
+        methods: {
+            toggle: function() {
+                if (this.isFolder) {
+                    this.open = !this.open
+                }
+            },
+            addChild: function() {
+                this.model.children.push({
+                    name: 'new stuff'
+                })
+            }
+        }
+    })
+
+    // boot up the demo
+    var demo = new Vue({
+        el: '#demo',
+        data: {
+            treeData: data,
+            treeData2: data2
+        }
+    })
+
+</script>
+
+</html>
