@@ -4,7 +4,7 @@
       <div class="outer-input">
         <div class="inner-input">
           <img class="search-icon" src="../../../assets/img/search.png">
-          <input type="text" placeholder="Find a user, team, meeting...">
+          <input type="text" placeholder="Find a project...">
         </div>
       </div>
     </div>
