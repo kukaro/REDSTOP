@@ -8,13 +8,15 @@
         <img id="edit-icon" src="../../assets/img/edit.png" width="15" height="15">
       </div>
       <div width="20%" style="float: right;">
-        <img id="play-icon" src="../../assets/img/play.png" width="35" height="35">
+        <img id="play-icon" src="../../assets/img/play.png" width="35" height="35" @click="clickPlay">
       </div>
       <br><br>
     </div>
 </template>
 
 <script>
+import casing from 'eslint-plugin-vue/lib/utils/casing'
+
 export default {
   props: ['initTitleName'],
   name: 'rs-tb-aside-title',
@@ -22,11 +24,28 @@ export default {
     initTitleName: function () {
       var temp = this.initTitleName.split('-')
       this.titleName = temp[temp.length - 1]
+      this.curUrl = this.baseUrl + casing.getConverter('kebab-case')(this.titleName.slice(1))
+      // console.log(this.curUrl)
     }
+  },
+  created: function () {
+    var temp = this.initTitleName.split('-')
+    this.titleName = temp[temp.length - 1]
+    this.curUrl = this.baseUrl + casing.getConverter('kebab-case')(this.titleName.slice(1))
+    // console.log(this.curUrl)
   },
   data: function () {
     return {
-      titleName: this.initTitleName
+      titleName: this.initTitleName,
+      curMethod: 'POST',
+      baseUrl: 'http://localhost:4000/',
+      curUrl: this.baseUrl
+    }
+  },
+  methods: {
+    clickPlay: function () {
+      console.log('여기는 rs-tb-aside-title입니다')
+      console.log(this.curUrl)
     }
   }
 }
