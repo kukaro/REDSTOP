@@ -2,12 +2,18 @@
   <div id="test" class="rs-mr-card-mini-regional-analysis rs-mr-card" :style="{'margin': '20px', 'width': width, 'height': height+'px', 'left': left, 'top': top + 'px'}">
     <div class="inner" :style="{'background-color': backgroundColor}">
       <b><rs-util-text :init-value="'Regional Analysis'" :init-color="'#5e5e5e'" :init-size="23"/></b>
+      <div width="20%" style="float: right;">
+        <select id="region" name="region">
+          <option value="1" selected="selected">South Korea</option>
+          <option value="2">Japan</option>
+        </select>
+      </div>
       <div class="dial">
         <rs-util-text :init-value="'Health'" :init-size="16" :init-color="'#696969'"/><br><br>
         <img class="map-bar" src="../../../assets/img/map-bar.png"/>
       </div>
       <div class="rs-map">
-
+        <img class="map-img" src="../../../assets/img/map-white.png"/>
       </div>
     </div>
   </div>
@@ -64,10 +70,30 @@ export default {
 }
 .rs-map{
   position: absolute;
-  padding-top: 30px;
   left: calc(12.5% + 20px);
   width: calc(87.5% - 40px);
   height: calc(100% - 86px);
-  background-color: green;
+  /*background-color: green;*/
+}
+select {
+  padding-left: 16px;
+  border-radius: 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  width: 200px;
+  height: 32px;
+  background: url(https://farm1.staticflickr.com/379/19928272501_4ef877c265_t.jpg) no-repeat 90% 50%;
+  background-size: 20px;
+  background-color: #ffffff;
+  border: solid 1px #c7c7c7;
+
+  font-family: TitilliumWeb;
+  font-size: 14px;
+}
+.map-img{
+  left: 10%;
+  position: absolute;
+  height: 100%;
 }
 </style>
