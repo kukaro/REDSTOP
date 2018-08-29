@@ -1,7 +1,7 @@
 <template>
   <div class="rs-header-project-body-item">
     <a :href="'#/'+itemKebabName" :class="{'active':isOver | isClick}" @mouseover="mouseOver" @mouseleave="mouseLeave">{{itemName}}
-      <div id="submenu" v-show="show">
+      <div id="submenu" v-show="false">
         <ul>
           <li><a href="#/monitoring/board">Board</a></li>
           <li><a href="#/monitoring/monitoring">Monitoring</a></li>
@@ -76,7 +76,7 @@ a {
   width: 160px;
   height: 120px;
   top: 70px;
-  left: 35.7%;
+  left: calc(35.7% - 130px);
   background-color: #8b8b8b;
 }
 

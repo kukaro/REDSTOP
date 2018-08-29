@@ -1,5 +1,5 @@
 <template>
-  <div class="rs-mr-board">
+  <div class="rs-mr-board" @click="click">
     <rs-mr-card-mini-total-apis :init-x-pos="1" :init-y-pos="1" :init-api-cnt="43"/>
     <rs-mr-card-mini-total-availability :init-x-pos="2" :init-y-pos="1" :init-percent="98"/>
     <rs-mr-card-mini-avg-p95 :init-x-pos="3" :init-y-pos="1" :init-avg="2" :init-p95="4.4"/>
@@ -134,6 +134,12 @@ export default {
           'Test Time': '2018.07.12 21:47:58'
         }
       ]
+    }
+  },
+  methods: {
+    click: function () {
+      //TODO 지워야할 것
+      document.location.href = 'http://localhost:8080/#/temp'
     }
   }
 }
