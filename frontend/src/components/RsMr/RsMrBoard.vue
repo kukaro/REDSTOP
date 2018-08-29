@@ -9,10 +9,12 @@
     <rs-mr-card-mini-table :init-x-pos="1" :init-y-pos="6" :init-width="2" :init-height="2" :init-title="'Heavy Latency'" :init-dangerous="3" :init-table-value="heavyLatencyTableValue"/>
     <rs-mr-card-mini-table :init-x-pos="3" :init-y-pos="6" :init-width="2" :init-height="2" :init-title="'Error'" :init-dangerous="3" :init-table-value="errorTableValue"/>
     <rs-mr-card-mini-regional-analysis :init-x-pos="5" :init-y-pos="1" :init-height="5" :init-width="2"/>
+    <rs-mr-card-mini-problem-issue :init-x-pos="5" :init-y-pos="6" :init-width="2" :init-height="2"/>
   </div>
 </template>
 
 <script>
+/* eslint-disable */
 import RsUtilText from '../RsUtil/RsUtilText'
 import RsMrCardMiniTotalApis from './RsMrCard/RsMrCardMiniTotalApis'
 import RsMrCardMiniTotalAvailability from './RsMrCard/RsMrCardMiniAvailability'
@@ -22,10 +24,12 @@ import RsMrCardMiniResponseTime from './RsMrCard/RsMrCardMiniResponseTime'
 import RsMrCardMiniAvailabilityChart from './RsMrCard/RsMrCardMiniAvailabilityChart'
 import RsMrCardMiniTable from './RsMrCard/RsMrCardMiniTable'
 import RsMrCardMiniRegionalAnalysis from './RsMrCard/RsMrCardMiniRegionalAnalysis'
+import RsMrCardMiniProblemIssue from './RsMrCard/RsMrCardMiniProblemIssue'
 export default {
   name: 'rs-mr-board',
   components: {
-    RsMrCardMiniRegionalAnalysis, RsMrCardMiniTable, RsMrCardMiniAvailabilityChart, RsMrCardMiniResponseTime, RsMrCardMiniCheckPoint, RsMrCardMiniAvgP95, RsMrCardMiniTotalAvailability, RsMrCardMiniTotalApis, RsUtilText},
+    RsMrCardMiniProblemIssue, RsMrCardMiniRegionalAnalysis, RsMrCardMiniTable, RsMrCardMiniAvailabilityChart,
+    RsMrCardMiniResponseTime, RsMrCardMiniCheckPoint, RsMrCardMiniAvgP95, RsMrCardMiniTotalAvailability, RsMrCardMiniTotalApis, RsUtilText},
   data: function () {
     return {
       heavyLatencyTableValue: [
