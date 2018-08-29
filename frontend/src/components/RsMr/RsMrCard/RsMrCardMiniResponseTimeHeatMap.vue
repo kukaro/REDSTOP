@@ -16,10 +16,10 @@ export default {
     }
   },
   created: function () {
-    console.log(this.initResponseTimeList)
+    // console.log(this.initResponseTimeList)
   },
   mounted: function () {
-    console.log(this.initResponseTimeList)
+    // console.log(this.initResponseTimeList)
   },
   data: function () {
     return {

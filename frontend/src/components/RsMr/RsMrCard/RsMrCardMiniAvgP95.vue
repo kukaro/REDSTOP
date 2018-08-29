@@ -43,7 +43,7 @@ export default {
 
 <style scoped>
 .rs-mr-card {
-  z-index: 4;
+  z-index: 0;
   position: absolute;
   padding: 10px;
 }

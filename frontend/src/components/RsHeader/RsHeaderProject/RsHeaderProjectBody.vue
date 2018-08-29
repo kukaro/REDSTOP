@@ -28,8 +28,11 @@ export default {
   },
   methods: {
     mouseClick: function (key) {
-      console.log('클릭햇음')
+      console.log(key)
       this.clickNumber = key
+    },
+    mouseOver: function (value) {
+      console.log('flag ' + value)
     }
   }
 }
