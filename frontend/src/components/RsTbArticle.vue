@@ -27,6 +27,7 @@
     mounted: function () {
       var demoWorkspace = Blockly.inject('blocklyDiv',
         {toolbox: document.getElementById('toolbox')});
+
       Blockly.Blocks['api'] = {
         init: function () {
           this.appendDummyInput()
@@ -52,21 +53,39 @@
       function onFirstComment(event) {
         if (event.type === Blockly.Events.CHANGE || event.type === Blockly.Events.MOVE) {
           var xml = Blockly.Xml.workspaceToDom(demoWorkspace);
-          var xml_text = Blockly.Xml.domToText(xml);
+          var xml_text = Blockly.Xml.domToPrettyText(xml);
           console.log(xml_text);
           $("#tutorial").hide();
         }
 
         if (event.type === Blockly.Events.DELETE) {
           var xml = Blockly.Xml.workspaceToDom(demoWorkspace);
-          var xml_text = Blockly.Xml.domToText(xml);
+          var xml_text = Blockly.Xml.domToPrettyText(xml);
           if (xml_text === "<xml xmlns=\"http://www.w3.org/1999/xhtml\"><variables></variables></xml>") {
             $("#tutorial").show();
           }
         }
 
         if (event.element === 'click') {
-          console.log("?");
+          var blockType = demoWorkspace.getBlockById(event.blockId).getFieldValue();
+          var blockValue;
+
+          if (blockType === 'Group') {
+            console.log('g')
+            blockType = 'g';
+            blockValue = demoWorkspace.getBlockById(event.blockId).getFieldValue('GroupName');
+          } else if (blockType === 'Test Case') {
+            console.log('t')
+            blockType = 't';
+            blockValue = demoWorkspace.getBlockById(event.blockId).getFieldValue('TestCase');
+          } else if (blockType === 'API') {
+            console.log('a')
+            blockType = 'a';
+            blockValue = demoWorkspace.getBlockById(event.blockId).getFieldValue('URL');
+          }
+
+          location.href = "#/test-block/" + blockType + blockValue;
+          console.log(blockValue)
         }
       }
 
