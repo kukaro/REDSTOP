@@ -12,6 +12,11 @@
 export default {
   props: ['initResponseData'],
   name: 'rs-tb-aside-ablock-response-title',
+  watch: {
+    initResponseData: function () {
+      this.responseData = this.initResponseData
+    }
+  },
   data: function () {
     return {
       responseData: this.initResponseData

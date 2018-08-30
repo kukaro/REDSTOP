@@ -7,7 +7,7 @@
       <rs-tb-aside-cblock></rs-tb-aside-cblock>
     </div>
     <div v-else-if="titleName[0]=='a'">
-      <rs-tb-aside-ablock :init-title-name="titleName"></rs-tb-aside-ablock>
+      <rs-tb-aside-ablock :init-title-name="titleName" :init-api-test-result="apiTestResult"></rs-tb-aside-ablock>
     </div>
 
   </div>
@@ -18,18 +18,22 @@ import RsTbAsideCblock from './RsTbAsideCblock'
 import RsTbAsideGblock from './RsTbAsideGblock'
 
 export default {
-  props: ['initTitleName'],
+  props: ['initTitleName', 'initApiTestResult'],
   name: 'rs-tb-aside-contents',
   components: {RsTbAsideAblock, RsTbAsideCblock, RsTbAsideGblock},
   watch: {
     initTitleName: function () {
       var temp = this.initTitleName.split('-')
       this.titleName = temp[temp.length - 1]
+    },
+    initApiTestResult: function () {
+      this.apiTestResult = this.initApiTestResult
     }
   },
   data: function () {
     return {
-      titleName: this.initTitleName
+      titleName: this.initTitleName,
+      apiTestResult: this.initApiTestResult
     }
   }
 }

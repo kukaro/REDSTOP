@@ -8,6 +8,11 @@
 export default {
   props: ['initKey', 'initValue'],
   name: 'rs-tb-aside-ablock-response-body-item',
+  watch: {
+    initValue: function () {
+      this.value = this.initValue
+    }
+  },
   created: function () {
     if (typeof this.value === 'string') {
       this.value = '"' + this.value + '"'

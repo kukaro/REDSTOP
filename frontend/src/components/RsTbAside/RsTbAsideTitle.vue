@@ -25,7 +25,9 @@ export default {
       var temp = this.initTitleName.split('-')
       this.titleName = temp[temp.length - 1]
       this.curUrl = this.baseUrl + casing.getConverter('kebab-case')(this.titleName.slice(1))
-      // console.log(this.curUrl)
+      // console.log('여기는 rs-tb-aside-title')
+      // this.tableValue = this.globalTableValue
+      // console.log(this.tableValue)
     }
   },
   created: function () {
@@ -33,19 +35,32 @@ export default {
     this.titleName = temp[temp.length - 1]
     this.curUrl = this.baseUrl + casing.getConverter('kebab-case')(this.titleName.slice(1))
     // console.log(this.curUrl)
+    // console.log('여기는 rs-tb-aside-title')
+    this.tableValue = this.globalTableValue
+    console.log(this.tableValue)
   },
   data: function () {
     return {
       titleName: this.initTitleName,
       curMethod: 'POST',
       baseUrl: 'http://localhost:4000/',
-      curUrl: this.baseUrl
+      curUrl: this.baseUrl,
+      tableValue: this.globalTableValue
     }
   },
   methods: {
     clickPlay: function () {
-      console.log('여기는 rs-tb-aside-title입니다')
-      console.log(this.curUrl)
+      // console.log('여기는 rs-tb-aside-title입니다')
+      // console.log(this.curMethod)
+      // console.log(this.tableValue)
+      var param = {
+        url: this.curUrl,
+        method: this.curMethod,
+        data: this.tableValue
+      }
+      this.$http.post('http://localhost:5000/load', {params: param}).then((response) => {
+        this.$emit('apiTestResultEvent', response.data)
+      })
     }
   }
 }

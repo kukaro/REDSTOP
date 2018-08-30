@@ -1,8 +1,8 @@
 <template>
   <div class="rs-tb-aside">
     <aside>
-      <rs-tb-aside-title :initTitleName="url"></rs-tb-aside-title>
-      <rs-tb-aside-contents :initTitleName="url"></rs-tb-aside-contents>
+      <rs-tb-aside-title :initTitleName="url" @apiTestResultEvent="onClickChild"></rs-tb-aside-title>
+      <rs-tb-aside-contents :initTitleName="url" :initApiTestResult="apiTestResult"></rs-tb-aside-contents>
     </aside>
   </div>
 </template>
@@ -28,7 +28,12 @@ export default {
   },
   data: function () {
     return {
-      // type이라는 변수
+      apiTestResult: null
+    }
+  },
+  methods: {
+    onClickChild (value) {
+      this.apiTestResult = value
     }
   }
 }
