@@ -1,0 +1,62 @@
+{
+  "data": [
+    {
+      "name": "User Management",
+      "type": "g",
+      "children": [
+        {
+          "name": "Sign",
+          "type": "g",
+          "children": [
+            {
+              "name": "Sign Up",
+              "type": "c"
+            },
+            {
+              "name": "Sign In",
+              "type": "c"
+            },
+            {
+              "name": "Sign Out",
+              "type": "c"
+            },
+            {
+              "name": "Verify Email",
+              "type": "c"
+            }
+          ]
+        },
+        {
+          "name": "Preferences",
+          "type": "g",
+          "children": [
+            {
+              "name": "Change User Info",
+              "type": "c",
+              "children": [
+                {
+                  "name": "Post",
+                  "type": "a",
+                  "method": "post",
+                  "url": "http://localhost:3000/api/post"
+                },
+                {
+                  "name": "Verify Email",
+                  "type": "a",
+                  "method": "get",
+                  "url": "http://localhost:3000/api/verify-email"
+                },
+                {
+                  "name": "Sign in",
+                  "type": "a",
+                  "method": "post",
+                  "url": "http://localhost:3000/api/sign-in"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
