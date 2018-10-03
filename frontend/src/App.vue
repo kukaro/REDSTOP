@@ -11,8 +11,12 @@ import RsTbAside from './components/RsTbAside'
 
 export default {
   name: 'App',
-  components: {RsTbAside, RsTbNav, RsHeader}
+  components: {RsTbAside, RsTbNav, RsHeader},
+  mounted() {
+    $('#app').css('width', $(window).width())
+  }
 }
+
 </script>
 
 <style>
@@ -25,7 +29,6 @@ export default {
   /*margin-top: 60px;*/
 /*}*/
 html, body{
-  width: 100%;
   height: 100%;
 }
 #app{

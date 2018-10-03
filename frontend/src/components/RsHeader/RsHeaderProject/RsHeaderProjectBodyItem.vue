@@ -24,6 +24,9 @@ export default {
       this.isClick = this.initIsClick
     }
   },
+  mounted() {
+    $('#submenu').css('marginLeft', $(window).width() * 0.285)
+  },
   created: function () {
     this.itemKebabName = casing.getConverter('kebab-case')(this.itemKebabName)
   },
@@ -76,7 +79,6 @@ a {
   width: 160px;
   height: 120px;
   top: 70px;
-  left: calc(35.7% - 130px);
   background-color: #8b8b8b;
 }
 

@@ -15,6 +15,10 @@ import RsTbAsideContents from "./RsTbAside/RsTbAsideContents"
 export default {
   props: ['url'],
   name: 'rs-tb-aside',
+  mounted() {
+    $('aside').css('width', $(window).width() * 0.4)
+    $('aside').css('marginLeft', $(window).width() * 0.6)
+  },
   created: function () {
   },
   updated: function () {
@@ -44,10 +48,8 @@ export default {
     background-color: white;
     position: absolute;
     padding-top: 60px;
-    margin-left: 60%;
     padding-left: 30px;
     padding-right: 30px;
-    width: 40%;
     height: 100%;
     margin-right: 40px;
     float: right;

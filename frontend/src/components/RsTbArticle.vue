@@ -24,7 +24,12 @@
 /* eslint-disable */
   export default {
     name: 'rs-tb-article',
+
     mounted: function () {
+
+      $('.rs-tb-article').css('width', $(window).width() * 0.8)
+      $('.rs-tb-article').css('marginLeft', $(window).width() * 0.2)
+
       var demoWorkspace = Blockly.inject('blocklyDiv',
         {toolbox: document.getElementById('toolbox')});
 
@@ -99,7 +104,6 @@
   .rs-tb-article {
     position: absolute;
     top: 70px;
-    left: 20%;
     width: 80%;
     height: 100%;
     background-color: #F3F7FB;
