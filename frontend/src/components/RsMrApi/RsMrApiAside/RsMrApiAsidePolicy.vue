@@ -1,6 +1,6 @@
 <template>
   <div class="rs-mr-api-aside-policy">
-   <p>Policy</p>
+    <p>Policy</p>
     <div class="selector" style="text-align: center">
       <select id="policy" name="policy">
         <option value="1" selected="selected">Samsung Android Rest 용 Policy</option>
@@ -15,59 +15,63 @@
 </template>
 
 <script>
-export default {
-  name: 'rs-mr-api-aside-policy',
-  components: { },
-  created: function () {
-  },
-  data: function () {
-    // return {
-    //   navHeaderList: ['Explorer', 'History'],
-    //   clickNumber: 0
-    // }
-  },
-  methods: {
-    // mouseClick: function (key) {
-    //   this.clickNumber = key
-    //   // console.log(this.clickNumber)
-    // }
+  export default {
+    name: 'rs-mr-api-aside-policy',
+    components: {},
+    created: function () {
+    },
+    data: function () {
+      // return {
+      //   navHeaderList: ['Explorer', 'History'],
+      //   clickNumber: 0
+      // }
+    },
+    methods: {
+      // mouseClick: function (key) {
+      //   this.clickNumber = key
+      //   // console.log(this.clickNumber)
+      // }
+    }
   }
-}
 </script>
 
 <style scoped>
-.rs-mr-api-aside-policy {
-  width: 100%;
-  height: 10%;
-  margin-bottom: 10px;
-  padding-left: 10px;
-}
-select {
-  /*padding-left: 100px;*/
-  width: 90%;
-  height: 46px;
-  border-radius: 20px;
-  font-size: 14px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 4px 0 #a6b7cd;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background: url(https://farm1.staticflickr.com/379/19928272501_4ef877c265_t.jpg) no-repeat 100% 100%;
-  padding-left: 20px;
-}
-p {
-  width: 405px;
-  height: 23px;
-  font-family: TitilliumWeb;
-  font-size: 15px;
-  font-weight: bold;
-  color: #000000;
-  margin-bottom: 0;
-}
-.selector{
-  margin-right: 20px;
-}
-#last{
-  background-color: #f2f7fb;
-}
+  .rs-mr-api-aside-policy {
+    width: 100%;
+    height: 10%;
+    margin-bottom: 10px;
+    padding-left: 10px;
+  }
+
+  select {
+    /*padding-left: 100px;*/
+    width: 90%;
+    height: 46px;
+    border-radius: 20px;
+    font-size: 14px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px 0 #a6b7cd;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url(https://farm1.staticflickr.com/379/19928272501_4ef877c265_t.jpg) no-repeat 100% 100%;
+    padding-left: 20px;
+  }
+
+  p {
+    width: 405px;
+    height: 23px;
+    font-family: TitilliumWeb;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 0;
+  }
+
+  .selector {
+    margin-right: 20px;
+  }
+
+  #last {
+    background-color: #f2f7fb;
+  }
 </style>

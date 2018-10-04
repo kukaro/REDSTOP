@@ -17,7 +17,11 @@ import RsMrApiAsideTable from './RsMrApiAside/RsMrApiAsideTable'
 
 export default {
   name: 'rs-mr-api-aside',
-  components: { RsMrApiAsideSummary, RsMrApiAsidePolicy, RsMrApiAsideHeatmap, RsMrApiAsideTable }
+  components: { RsMrApiAsideSummary, RsMrApiAsidePolicy, RsMrApiAsideHeatmap, RsMrApiAsideTable },
+  mounted() {
+    $('aside').width($(window).width() / 2)
+    $('aside').css('left', $(window).width() / 2)
+  }
 }
 </script>
 

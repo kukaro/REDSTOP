@@ -17,7 +17,10 @@ import RsMrApiSectionSelector from './RsMrApiSection/RsMrApiSectionSelector'
 
 export default {
   name: 'rs-mr-api-section',
-  components: { RsMrApiSectionTitle, RsMrApiSectionContent, RsMrApiSectionSelector, RsMrApiSectionTitle2 }
+  components: { RsMrApiSectionTitle, RsMrApiSectionContent, RsMrApiSectionSelector, RsMrApiSectionTitle2 },
+  mounted() {
+    $('.rs-mr-api-section').width($(window).width() / 2)
+  }
 }
 </script>
 

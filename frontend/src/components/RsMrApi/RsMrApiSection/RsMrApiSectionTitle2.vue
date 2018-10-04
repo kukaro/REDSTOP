@@ -29,7 +29,7 @@ export default {
   left: 0;
   width: 100%;
   height: 5%;
-  padding-top: 10px;
+  padding-top: 20px;
   padding-left: 20px;
   padding-right: 10px;
   box-sizing: unset;

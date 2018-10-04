@@ -27,49 +27,48 @@
 
 <script>
 
-export default {
-  name: 'rs-mr-api-modal-contents-datail',
-  watch: {
-  },
-  components: { },
-  created: function () {
-    // alert(this.initIsModal)
-  },
-  data: function () {
-    return {
-
-    }
-  },
-  methods: {
+  export default {
+    name: 'rs-mr-api-modal-contents-datail',
+    watch: {},
+    components: {},
+    created: function () {
+      // alert(this.initIsModal)
+    },
+    data: function () {
+      return {}
+    },
+    methods: {}
   }
-}
 </script>
 
 <style scoped>
-.rs-mr-api-modal-contents-detail{
-  width: 50%;
-  height: 70%;
-  float: right;
-  line-height: 1.00;
-  margin-right: 10px;
-  padding-left: 20px;
-}
-.row{
+  .rs-mr-api-modal-contents-detail {
+    width: 50%;
+    height: 70%;
+    float: right;
+    line-height: 1.00;
+    margin-right: 10px;
+    padding-left: 20px;
+  }
 
-}
-.first{
-  width: 123px;
-  height: 405px;
-  font-size: 13px;
-  font-weight: bold;
-  line-height: 2.85;
-  color: #323c47;
-  /*margin-right: 10px;*/
-}
-.second{
-  font-family: NotoSansCJKkr;
-  font-size: 13px;
-  line-height: 2.85;
-  color: #000000;
-}
+  .row {
+
+  }
+
+  .first {
+    width: 123px;
+    height: 405px;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 2.85;
+    color: #323c47;
+    /*margin-right: 10px;*/
+  }
+
+  .second {
+    font-family: NotoSansCJKkr;
+    font-size: 13px;
+    line-height: 2.85;
+    color: #000000;
+  }
 </style>

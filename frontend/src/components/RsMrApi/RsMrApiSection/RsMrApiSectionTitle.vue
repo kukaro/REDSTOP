@@ -21,6 +21,9 @@ export default {
   data: function () {
   },
   methods: {
+  }, mounted() {
+    $('.rs-mr-api-section-title').width($(window).width() / 2)
+    $('#region').css('left', $(window).width() / 2.9)
   }
 }
 </script>
@@ -35,6 +38,8 @@ export default {
   padding-right: 10px;
 }
 #title{
+  position: absolute;
+  margin-top: 8px;
   width: 185px;
   height: 31px;
   font-family: TitilliumWeb;
@@ -43,18 +48,18 @@ export default {
   color: #000000;
 }
 select {
+  position: absolute;
   padding-left: 16px;
   border-radius: 20px;
+  margin-top: 16px;
   -webkit-appearance: none;
   -moz-appearance: none;
-
-  width: 200px;
+  width: 180px;
   height: 32px;
   background: url(https://farm1.staticflickr.com/379/19928272501_4ef877c265_t.jpg) no-repeat 90% 50%;
   background-size: 20px;
   background-color: #ffffff;
   border: solid 1px #c7c7c7;
-
   font-family: TitilliumWeb;
   font-size: 14px;
 }

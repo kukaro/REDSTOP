@@ -10,24 +10,25 @@
 </template>
 
 <script>
-import RsHeaderProject from '../RsHeader/RsHeaderProject'
-import RsCalendar from './RsMrMonitoring/RsMrMonitoringCalendar'
-import RsMonitoringItem from './RsMrMonitoring/RsMrMonitoringItem'
-export default {
-  name: 'rs-mr-monitoring',
-  components: {RsHeaderProject, RsCalendar, RsMonitoringItem},
-  created () {
-    this.$http.get('http://localhost:3000/api/apiList')
-      .then((response) => {
-        this.apiList = response.data
-      })
-  },
-  data: function () {
-    return {
-      apiList: []
+  import RsHeaderProject from '../RsHeader/RsHeaderProject'
+  import RsCalendar from './RsMrMonitoring/RsMrMonitoringCalendar'
+  import RsMonitoringItem from './RsMrMonitoring/RsMrMonitoringItem'
+
+  export default {
+    name: 'rs-mr-monitoring',
+    components: {RsHeaderProject, RsCalendar, RsMonitoringItem},
+    created() {
+      this.$http.get('http://localhost:3000/api/apiList')
+        .then((response) => {
+          this.apiList = response.data
+        })
+    },
+    data: function () {
+      return {
+        apiList: []
+      }
     }
   }
-}
 </script>
 
 <style scoped>

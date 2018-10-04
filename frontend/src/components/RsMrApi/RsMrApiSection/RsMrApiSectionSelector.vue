@@ -56,6 +56,9 @@ export default {
   data: function () {
   },
   methods: {
+  },
+  mounted() {
+    $('.rs-mr-api-section-selector').width($(window).width() / 2.1)
   }
 }
 </script>

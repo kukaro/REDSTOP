@@ -6,43 +6,41 @@
 </template>
 
 <script>
-export default {
-  name: 'rs-mr-api-modal-contents-graph',
-  watch: {
-  },
-  components: { },
-  created: function () {
-    // alert(this.initIsModal)
-  },
-  data: function () {
-    return {
-
-    }
-  },
-  methods: {
+  export default {
+    name: 'rs-mr-api-modal-contents-graph',
+    watch: {},
+    components: {},
+    created: function () {
+      // alert(this.initIsModal)
+    },
+    data: function () {
+      return {}
+    },
+    methods: {}
   }
-}
 </script>
 
 <style scoped>
-.rs-mr-api-modal-contents-graph{
-  background-color: #ffffff;
-  width: 100%;
-  height: 32%;
-  float: left;
-  line-height: 1.00;
-}
-#title{
-  padding-top: 5px;
-  padding-left: 20px;
-  width: auto;
-  height: 22px;
-  font-family: NotoSansCJKkr;
-  font-size: 15px;
-  font-weight: bold;
-  color: #000000;
-}
-img{
-  padding-left: 20px;
-}
+  .rs-mr-api-modal-contents-graph {
+    background-color: #ffffff;
+    width: 100%;
+    height: 32%;
+    float: left;
+    line-height: 1.00;
+  }
+
+  #title {
+    padding-top: 5px;
+    padding-left: 20px;
+    width: auto;
+    height: 22px;
+    font-family: NotoSansCJKkr;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+  }
+
+  img {
+    padding-left: 20px;
+  }
 </style>
