@@ -26,9 +26,9 @@ export default {
   components: {RsMrCardMiniTableBody, RsMrCardMiniTableHeader, RsUtilText},
   data: function () {
     return {
-      width: $(window).width() * 0.3336 + 'px',
+      width: screen.width * 0.3336 + 'px',
       height: 130 * (this.initHeight ? this.initHeight : 1),
-      left: $(window).width() * 0.166 * (this.initXPos - 1) + 'px',
+      left: screen.width * 0.166 * (this.initXPos - 1) + 'px',
       top: 130 * (this.initYPos - 1) + 70,
       backgroundColor: this.initBackgroundColor ? this.initBackgroundColor : '#ffffff',
       title: this.initTitle,

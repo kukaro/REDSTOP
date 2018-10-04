@@ -58,7 +58,7 @@ export default {
   methods: {
   },
   mounted() {
-    $('.rs-mr-api-section-selector').width($(window).width() / 2.1)
+    $('.rs-mr-api-section-selector').width(screen.width / 2.1)
   }
 }
 </script>

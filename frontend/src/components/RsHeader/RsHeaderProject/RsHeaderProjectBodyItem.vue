@@ -25,7 +25,7 @@ export default {
     }
   },
   mounted() {
-    $('#submenu').css('marginLeft', $(window).width() * 0.285)
+    $('#submenu').css('marginLeft', screen.width * 0.285)
   },
   created: function () {
     this.itemKebabName = casing.getConverter('kebab-case')(this.itemKebabName)

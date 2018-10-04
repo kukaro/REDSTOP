@@ -16,8 +16,8 @@ export default {
   props: ['url'],
   name: 'rs-tb-aside',
   mounted() {
-    $('aside').css('width', $(window).width() * 0.4)
-    $('aside').css('marginLeft', $(window).width() * 0.6)
+    $('aside').css('width', screen.width * 0.4)
+    $('aside').css('marginLeft', screen.width * 0.6)
   },
   created: function () {
   },

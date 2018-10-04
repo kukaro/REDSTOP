@@ -27,8 +27,8 @@
 
     mounted: function () {
 
-      $('.rs-tb-article').css('width', $(window).width() * 0.8)
-      $('.rs-tb-article').css('marginLeft', $(window).width() * 0.2)
+      $('.rs-tb-article').css('width', screen.width * 0.8)
+      $('.rs-tb-article').css('marginLeft', screen.width * 0.2)
 
       var demoWorkspace = Blockly.inject('blocklyDiv',
         {toolbox: document.getElementById('toolbox')});

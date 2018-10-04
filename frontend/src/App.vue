@@ -13,7 +13,7 @@ export default {
   name: 'App',
   components: {RsTbAside, RsTbNav, RsHeader},
   mounted() {
-    $('#app').css('width', $(window).width())
+    $('#app').css('width', screen.width)
   }
 }
 

@@ -32,9 +32,9 @@ export default {
   components: {RsUtilText},
   data: function () {
     return {
-      width: $(window).width() * 0.288 + 'px',
+      width: screen.width * 0.288 + 'px',
       height: 126 * (this.initHeight ? this.initHeight : 1),
-      left: $(window).width() * 0.668 + 'px',
+      left: screen.width * 0.668 + 'px',
       top: 130 * (this.initYPos - 1) + 80,
       background: 10
     }

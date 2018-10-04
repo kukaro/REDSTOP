@@ -22,8 +22,8 @@ export default {
   },
   methods: {
   }, mounted() {
-    $('.rs-mr-api-section-title').width($(window).width() / 2)
-    $('#region').css('left', $(window).width() / 2.9)
+    $('.rs-mr-api-section-title').width(screen.width / 2)
+    $('#region').css('left', screen.width / 2.9)
   }
 }
 </script>

@@ -38,7 +38,7 @@
 export default {
   name: 'rs-calendar',
   mounted() {
-    $('.rs-calendar').width($(window).width())
+    $('.rs-calendar').width(screen.width)
   }
 }
 </script>

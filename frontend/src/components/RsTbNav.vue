@@ -14,7 +14,7 @@ export default {
   name: 'rs-tb-nav',
   components: { RsTbNavBody, RsTbNavHeader },
   mounted() {
-    $('nav').css('width', $(window).width() * 0.2)
+    $('nav').css('width', screen.width * 0.2)
   }
 }
 </script>
