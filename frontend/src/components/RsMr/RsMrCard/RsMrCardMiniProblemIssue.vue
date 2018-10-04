@@ -21,9 +21,9 @@ export default {
   components: {RsMrCardMiniProblemIssueBody, RsUtilText},
   data: function () {
     return {
-      width: 100 / 6 * (this.initWidth ? this.initWidth : 1) + '%',
+      width: $(window).width() / 3.3 + 'px',
       height: 130 * (this.initHeight ? this.initHeight : 1),
-      left: 100 / 6 * (this.initXPos - 1) + '%',
+      left: $(window).width() * 0.662 + "px",
       top: 130 * (this.initYPos - 1) + 70,
       backgroundColor: this.initBackgroundColor ? this.initBackgroundColor : '#ffffff'
     }

@@ -32,10 +32,10 @@ export default {
   components: {RsUtilText},
   data: function () {
     return {
-      width: 100 / 6 * (this.initWidth ? this.initWidth : 1) + '%',
-      height: 130 * (this.initHeight ? this.initHeight : 1),
-      left: 100 / 6 * (this.initXPos - 1) + '%',
-      top: 130 * (this.initYPos - 1) + 70,
+      width: $(window).width() * 0.288 + 'px',
+      height: 126 * (this.initHeight ? this.initHeight : 1),
+      left: $(window).width() * 0.668 + 'px',
+      top: 130 * (this.initYPos - 1) + 80,
       background: 10
     }
   }
@@ -45,11 +45,11 @@ export default {
 <style scoped>
 .rs-mr-card {
   z-index: 4;
+  width: 29%;
   position: absolute;
-  padding: 10px;
 }
 .inner{
-  padding: 13px;
+  padding: 26px;
   width: 100%;
   height: 100%;
   background-color: white;
@@ -63,37 +63,40 @@ export default {
 .dial{
   position: absolute;
   padding-top: 30px;
-  left: 20px;
+  left: 36px;
   width: 12.5%;
   height: calc(100% - 86px);
   /*background-color: red;*/
 }
 .rs-map{
   position: absolute;
-  left: calc(12.5% + 20px);
+  left: calc(12.5% + 0px);
   width: calc(87.5% - 40px);
   height: calc(100% - 86px);
+  margin-top: 84px;
   /*background-color: green;*/
 }
 select {
+  position: absolute;
+  top: 68px;
+  left: 40%;
   padding-left: 16px;
   border-radius: 20px;
   -webkit-appearance: none;
   -moz-appearance: none;
-
+  margin-top: 24px;
   width: 200px;
   height: 32px;
-  background: url(https://farm1.staticflickr.com/379/19928272501_4ef877c265_t.jpg) no-repeat 90% 50%;
   background-size: 20px;
-  background-color: #ffffff;
+  background: #ffffff url(https://farm1.staticflickr.com/379/19928272501_4ef877c265_t.jpg) no-repeat 90% 50%;
   border: solid 1px #c7c7c7;
-
   font-family: TitilliumWeb;
   font-size: 14px;
 }
 .map-img{
+  width: 80%;
   left: 10%;
   position: absolute;
-  height: 100%;
+  height: 80%;
 }
 </style>

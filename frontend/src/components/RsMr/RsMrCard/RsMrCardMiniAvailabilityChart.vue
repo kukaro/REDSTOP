@@ -27,7 +27,7 @@ export default {
   components: {RsMrCardMiniResponseTimeXLabelItem, RsMrCardMiniAvailabilityChartBody, RsUtilText},
   data: function () {
     return {
-      width: 100 / 6 * (this.initWidth ? this.initWidth : 1) + '%',
+      width: $(window).width() * 0.666 + 'px',
       height: 130 * (this.initHeight ? this.initHeight : 1),
       left: 100 / 6 * (this.initXPos - 1) + '%',
       top: 130 * (this.initYPos - 1) + 70,

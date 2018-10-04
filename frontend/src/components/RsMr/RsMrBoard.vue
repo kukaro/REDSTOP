@@ -135,13 +135,14 @@ export default {
         }
       ]
     }
-  },
-  methods: {
-    click: function () {
-      //TODO 지워야할 것
-      document.location.href = 'http://localhost:8080/#/temp'
-    }
   }
+  // ,
+  // methods: {
+  //   click: function () {
+  //     //TODO 지워야할 것
+  //     document.location.href = 'http://localhost:8080/#/temp'
+  //   }
+  // }
 }
 </script>
 
