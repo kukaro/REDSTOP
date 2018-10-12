@@ -24,7 +24,7 @@ export default {
       this.isClick = this.initIsClick
     }
   },
-  mounted() {
+  mounted () {
     $('#submenu').css('marginLeft', screen.width * 0.285)
   },
   created: function () {
@@ -43,6 +43,9 @@ export default {
       this.isOver = true
       if (this.itemName === 'Monitoring') {
         $('#submenu').show()
+      }
+      if (this.itemName === 'Report' || this.itemName === 'Scheduler' || this.itemName === 'Scenario') {
+        $('#submenu').hide()
       }
     },
     mouseLeave: function (e) {

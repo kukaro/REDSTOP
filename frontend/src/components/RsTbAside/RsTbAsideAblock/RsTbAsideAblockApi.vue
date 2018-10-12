@@ -20,7 +20,7 @@
 </template>
 
 <script>
-  /* eslint-disable */
+/* eslint-disable */
   import casing from 'eslint-plugin-vue/lib/utils/casing'
 
   export default {

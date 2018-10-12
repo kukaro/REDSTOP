@@ -12,7 +12,7 @@ import RsTbAside from './components/RsTbAside'
 export default {
   name: 'App',
   components: {RsTbAside, RsTbNav, RsHeader},
-  mounted() {
+  mounted () {
     $('#app').css('width', screen.width)
   }
 }
