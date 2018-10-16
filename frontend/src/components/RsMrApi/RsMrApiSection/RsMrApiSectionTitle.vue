@@ -26,6 +26,11 @@ export default {
     $('#region').css('left', screen.width / 2.9)
   }
 }
+$(window).resize(function () {
+  $('.rs-mr-api-section-title').width(screen.width / 2)
+  $('#region').css('left', screen.width / 2.9)
+})
+
 </script>
 
 <style scoped>

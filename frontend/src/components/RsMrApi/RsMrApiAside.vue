@@ -23,6 +23,10 @@ export default {
     $('aside').css('left', screen.width / 2)
   }
 }
+$(window).resize(function () {
+  $('aside').width(screen.width / 2)
+  $('aside').css('left', screen.width / 2)
+})
 </script>
 
 <style>

@@ -58,6 +58,9 @@ export default {
     }
   }
 }
+$(window).resize(function () {
+  $('#submenu').css('marginLeft', screen.width * 0.285)
+})
 </script>
 
 <style scoped>

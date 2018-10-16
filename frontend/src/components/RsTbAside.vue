@@ -41,6 +41,11 @@ export default {
     }
   }
 }
+
+$(window).resize(function () {
+  $('aside').css('width', screen.width * 0.4)
+  $('aside').css('marginLeft', screen.width * 0.6)
+})
 </script>
 
 <style scoped>

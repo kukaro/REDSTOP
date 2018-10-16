@@ -22,6 +22,9 @@ export default {
     $('.rs-mr-api-section').width(screen.width / 2)
   }
 }
+$(window).resize(function () {
+  $('.rs-mr-api-section').width(screen.width / 2)
+})
 </script>
 
 <style>

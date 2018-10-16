@@ -61,6 +61,9 @@ export default {
     $('.rs-mr-api-section-selector').width(screen.width / 2.1)
   }
 }
+$(window).resize(function () {
+  $('.rs-mr-api-section-selector').width(screen.width / 2.1)
+})
 </script>
 
 <style scoped>

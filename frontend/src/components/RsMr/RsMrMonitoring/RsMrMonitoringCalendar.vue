@@ -41,6 +41,9 @@ export default {
     $('.rs-calendar').width(screen.width)
   }
 }
+$(window).resize(function () {
+  $('.rs-calendar').width(screen.width)
+})
 </script>
 
 <style scoped>

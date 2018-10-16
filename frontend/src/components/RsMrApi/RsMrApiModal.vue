@@ -11,32 +11,32 @@
 </template>
 
 <script>
-  import RsMrApiModalTitle from './RsMrApiModal/RsMrApiModalTitle'
-  import RsMrApiModalContents from './RsMrApiModal/RsMrApiModalContents'
+import RsMrApiModalTitle from './RsMrApiModal/RsMrApiModalTitle'
+import RsMrApiModalContents from './RsMrApiModal/RsMrApiModalContents'
 
-  export default {
-    props: ['initIsModal'],
-    name: 'rs-mr-api-modal',
-    watch: {
-      initIsModal: function () {
-        this.isModal = this.initIsModal
-      }
-    },
-    components: {RsMrApiModalTitle, RsMrApiModalContents},
-    created: function () {
-      // alert(this.initIsModal)
-    },
-    data: function () {
-      return {
-        isModal: this.initIsModal
-      }
-    },
-    methods: {
-      mouseClick: function () {
-        this.isModal = !this.isModal
-      }
+export default {
+  props: ['initIsModal'],
+  name: 'rs-mr-api-modal',
+  watch: {
+    initIsModal: function () {
+      this.isModal = this.initIsModal
+    }
+  },
+  components: {RsMrApiModalTitle, RsMrApiModalContents},
+  created: function () {
+    // alert(this.initIsModal)
+  },
+  data: function () {
+    return {
+      isModal: this.initIsModal
+    }
+  },
+  methods: {
+    mouseClick: function () {
+      this.isModal = !this.isModal
     }
   }
+}
 </script>
 
 <style scoped>
