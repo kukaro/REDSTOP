@@ -9,7 +9,7 @@
         </select>
       </div>
       <div class="rs-map">
-        <div id="mapdiv" style="width: 110%; background-color:#fff; height: 80%;"></div>
+        <div id="mapdiv" style="width: 110%; background-color:#fff; height: 85%;"></div>
       </div>
     </div>
   </div>
@@ -132,9 +132,16 @@ export default {
     }
   }
 }
+$(window).resize(function () {
+  $('#test').css('width', screen.width * 0.666 + 'px')
+  $('#test').css('left', 100 / 6 * (this.initXPos - 1) + '%')
+})
 </script>
 
 <style scoped>
+  #mapdiv {
+    margin-top: -20px;
+  }
 .rs-mr-card {
   z-index: 4;
   width: 29%;

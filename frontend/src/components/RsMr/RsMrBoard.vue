@@ -140,7 +140,7 @@ export default {
   methods: {
     click: function () {
       //TODO 지워야할 것
-      document.location.href = 'http://localhost:8080/#/temp'
+      // document.location.href = 'http://localhost:8080/#/temp'
     }
   }
 }

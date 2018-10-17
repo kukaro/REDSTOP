@@ -23,7 +23,7 @@ export default {
     return {
       width: screen.width / 3.3 + 'px',
       height: 130 * (this.initHeight ? this.initHeight : 1),
-      left: screen.width * 0.662 + "px",
+      left: screen.width * 0.662 + 'px',
       top: 130 * (this.initYPos - 1) + 70,
       backgroundColor: this.initBackgroundColor ? this.initBackgroundColor : '#ffffff'
     }
