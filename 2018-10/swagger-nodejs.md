@@ -128,5 +128,9 @@ YAML 형태로 맨 위에 주석을 달면 된다. \(JSON도 되는데 주로 YA
 
 API 여러개 정의하고 다시 [http://localhost:3000/api-docs/\#/](http://localhost:3000/api-docs/#/) 접속하면
 
+![&#xBA85;&#xC138;&#xB97C; &#xBCFC; &#xC218; &#xC788;&#xB2E4;](../.gitbook/assets/2018-11-04-3.57.11.png)
+
+
+
 
 
